@@ -62,10 +62,11 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-      * Add the item to the bag.
-      * @param      Item
-      */
-    public void add(Item item) {
+     * {Add the item to the bag}.
+     *
+     * @param      item  The item
+     */
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
@@ -86,6 +87,10 @@ public class Bag<Item> implements Iterable<Item> {
      * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
+
+        /**
+         * {Current Node}.
+         */
         private Node current = first;
 
         /**
