@@ -115,12 +115,12 @@ class GraphADT implements Graph {
     /**
      * returns all the values in list.
      *
-     * @param      v     integer
+     * @param      v1     integer
      *
      * @return   list.
      */
-    public Iterable<Integer> adj(final int v) {
-        return adj[v];
+    public Iterable<Integer> adj(final int v1) {
+        return adj[v1];
     }
 
     /**
@@ -131,8 +131,8 @@ class GraphADT implements Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v, final int w) {
-        for (int k : adj[v]) {
+    public boolean hasEdge(final int v1, final int w) {
+        for (int k : adj[v1]) {
                 if (k == w) {
                     return true;
                 }
