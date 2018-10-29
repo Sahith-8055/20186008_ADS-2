@@ -218,32 +218,33 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        int v = Integer.parseInt(sc.nextLine());
-        int e = Integer.parseInt(sc.nextLine());
-        String keynames = sc.nextLine();
+        Scanner scan = new Scanner(System.in);
+        String type = scan.nextLine();
+        int vertices = Integer.parseInt(scan.nextLine());
+        int edges = Integer.parseInt(scan.nextLine());
+        String keynames = scan.nextLine();
         String[] tokens = keynames.split(",");
-        GraphADT g = new GraphADT(v);
-        while (sc.hasNext()) {
-            String connect = sc.nextLine();
+        GraphADT g = new GraphADT(vertices);
+        while (edges > 0) {
+            String connect = scan.nextLine();
             String[] connections = connect.split(" ");
             g.addEdge(Integer.parseInt(connections[0]),
                 Integer.parseInt(connections[1]));
+            edges--;
         }
-        switch (input) {
+        switch (type) {
             case "List":
             try {
-                g.displayList(v, e, tokens);
-            } catch (Exception p) {
-                System.out.println(p.getMessage());
+                g.displayList(vertices, edges, tokens);
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
             }
             break;
             case "Matrix":
             try {
-                g.displayMatrix(v, e);
-            } catch (Exception p) {
-                System.out.println(p.getMessage());
+                g.displayMatrix(vertices, edges);
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
             }
             break;
             default:
@@ -251,4 +252,5 @@ public final class Solution {
         }
     }
 }
+
 
