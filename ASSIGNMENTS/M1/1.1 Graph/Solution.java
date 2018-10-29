@@ -126,7 +126,7 @@ class GraphADT implements Graph {
     /**
      * Determines if it has edge.
      *
-     * @param      v     integer
+     * @param      v1     integer
      * @param      w     integer
      *
      * @return     True if has edge, False otherwise.
@@ -251,3 +251,4 @@ public final class Solution {
         }
     }
 }
+
