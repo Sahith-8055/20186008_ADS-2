@@ -53,11 +53,11 @@ class GraphADT implements Graph {
     /**
      * vertices.
      */
-    private int V;
+    private int v;
     /**
      * edges.
      */
-    private int E;
+    private int e;
     /**
      * array of bag type.
      */
@@ -66,13 +66,13 @@ class GraphADT implements Graph {
     /**
      * Constructs the object.
      *
-     * @param      V1    The V1
+     * @param      v1    The v1
      */
-    GraphADT(final int V1) {
-        this.V = V1;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V1];
-        for (int i = 0; i < V; i++) {
+    GraphADT(final int v1) {
+        this.v = v1;
+        this.e = 0;
+        adj = (Bag<Integer>[]) new Bag[v1];
+        for (int i = 0; i < v; i++) {
             adj[i] = new Bag<Integer>();
         }
     }
@@ -86,7 +86,7 @@ class GraphADT implements Graph {
      * @return    no of vertices
      */
     public int vertices() {
-        return V;
+        return v;
     }
 
     /**
@@ -95,7 +95,7 @@ class GraphADT implements Graph {
      * @return    no of edges
      */
     public int edges() {
-        return E;
+        return e;
     }
 
     /**
@@ -109,7 +109,7 @@ class GraphADT implements Graph {
             return;
         }
         if (!hasEdge(v1, w1)) {
-            E++;
+            e++;
         }
         adj[v1].add(w1);
         adj[w1].add(v1);
