@@ -76,9 +76,6 @@ class GraphADT implements Graph {
             adj[i] = new Bag<Integer>();
         }
     }
-    GraphADT() {
-
-    }
 
     /**
      * returns number of vertices.
@@ -222,30 +219,29 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        GraphADT gph = new GraphADT();
         String input = sc.nextLine();
         int v = Integer.parseInt(sc.nextLine());
         int e = Integer.parseInt(sc.nextLine());
         String keynames = sc.nextLine();
         String[] tokens = keynames.split(",");
-        gph = new GraphADT(v);
+        GraphADT g = new GraphADT(v);
         while (sc.hasNext()) {
             String connect = sc.nextLine();
             String[] connections = connect.split(" ");
-            gph.addEdge(Integer.parseInt(connections[0]),
+            g.addEdge(Integer.parseInt(connections[0]),
                 Integer.parseInt(connections[1]));
         }
         switch (input) {
             case "List":
             try {
-                gph.displayList(v, e, tokens);
+                g.displayList(v, e, tokens);
             } catch (Exception p) {
                 System.out.println(p.getMessage());
             }
             break;
             case "Matrix":
             try {
-                gph.displayMatrix(v, e);
+                g.displayMatrix(v, e);
             } catch (Exception p) {
                 System.out.println(p.getMessage());
             }

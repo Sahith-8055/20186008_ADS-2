@@ -4,8 +4,7 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M1\1.1 Graph\Solution.java:79:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M1\1.1 Graph\Solution.java:125:44: 'v' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M1\1.1 Graph\Solution.java:137:38: 'v' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M1\1.1 Graph\Solution.java:122:44: 'v' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M1\1.1 Graph\Solution.java:134:38: 'v' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.
