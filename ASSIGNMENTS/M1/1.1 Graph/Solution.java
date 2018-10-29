@@ -65,7 +65,7 @@ class GraphADT implements Graph {
 
     /**
      * Constructs the object.
-     *
+     * Time complexity of this method is O(1).
      * @param      v1    The v1
      */
     GraphADT(final int v1) {
@@ -79,7 +79,7 @@ class GraphADT implements Graph {
 
     /**
      * returns number of vertices.
-     *
+     * Time complexity of this method is O(1).
      * @return    no of vertices
      */
     public int vertices() {
@@ -88,7 +88,7 @@ class GraphADT implements Graph {
 
     /**
      * returns number of edges.
-     *
+     * Time complexity of this method is O(1).
      * @return    no of edges
      */
     public int edges() {
@@ -97,7 +97,7 @@ class GraphADT implements Graph {
 
     /**
      * Adds an edge.
-     *
+     * Time complexity of this method is O(1).
      * @param      v1    integer
      * @param      w1    integer
      */
@@ -114,7 +114,7 @@ class GraphADT implements Graph {
 
     /**
      * returns all the values in list.
-     *
+     * Time complexity of this method is O(N).
      * @param      v1     integer
      *
      * @return   list.
@@ -125,7 +125,7 @@ class GraphADT implements Graph {
 
     /**
      * Determines if it has edge.
-     *
+     * Time complexity of this method is O(N).
      * @param      v1     integer
      * @param      w     integer
      *
@@ -142,7 +142,7 @@ class GraphADT implements Graph {
 
     /**
      * display function of adjacency list.
-     *
+     * Time complexity of this method is O(N).
      * @param      v1         The v1
      * @param      e1         The e1
      * @param      tokens     The tokens
@@ -170,7 +170,7 @@ class GraphADT implements Graph {
     }
     /**
      * display function of adjacency matrix list.
-     *
+     * Time complexity of this method is O(N).
      * @param      v1         The v1
      * @param      e1         The e1
      *
@@ -213,7 +213,7 @@ public final class Solution {
         //Unused Constructor.
     }
     /**
-     * main function.
+     * Client function.
      *
      * @param      args  The arguments
      */
