@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
     /**
      * {Declaring an object of weighted quick union}.
@@ -130,6 +133,11 @@ public final class Solution {
     private Solution() {
         // Unused Constructor.
     }
+    /**
+     * {Client Program}.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int number = Integer.parseInt(scan.nextLine());
