@@ -62,9 +62,6 @@ Audit done.
 Checkstyle ends with 24 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M2\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M2\2.1 CC_Percolation\Solution.java:123: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M2\2.1 CC_Percolation\Solution.java:123: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M2\2.1 CC_Percolation\Solution.java:124:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M2\2.1 CC_Percolation\Solution.java:127:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M2\2.1 CC_Percolation\Solution.java:133:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.

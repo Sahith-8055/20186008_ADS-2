@@ -120,7 +120,13 @@ class Percolation {
         return cc.connected(first, last);
     }
 }
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         // Unused Constructor.
     }
