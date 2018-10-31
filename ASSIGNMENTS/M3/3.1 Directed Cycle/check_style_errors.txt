@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Bag.java:60:32: Expected @param tag for 'item'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:9:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
