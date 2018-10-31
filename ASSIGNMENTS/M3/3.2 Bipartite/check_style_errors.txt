@@ -35,23 +35,12 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:4:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:9: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:10:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:11:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:25: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:32: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:40: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:50:25: Parameter item should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:50:30: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:67: Expected @return tag. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:24:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:25:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:68:25: Parameter item should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:68:30: Expected @param tag for 'item'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -1,41 +1,58 @@
-import java.util.NoSuchElementException;
-
+/**
+ * List of Queue.
+ *
+ * @param      <Item>  The item
+ */
 public class Queue<Item> {
-    private int N;         // number of elements on queue
-    private Node first;    // beginning of queue
-    private Node last;     // end of queue
+    /**
+     * {number of elements on queue}.
+     */
+    private int n;
+    /**
+     * {beginning of queue}.
+     */
+    private Node first;
+    /**
+     * {end of queue}.
+     */
+    private Node last;
 
-    // helper linked list class
+    /**
+     * Class for node.
+     */
     private class Node {
         private Item item;
         private Node next;
     }
 
-   /**
+    /**
      * Create an empty queue.
      */
-    public Queue() {
+    Queue() {
         first = null;
         last  = null;
     }
 
-   /**
+    /**
      * Is the queue empty?
+     * @return     {Boolean}
      */
     public boolean isEmpty() {
         return first == null;
     }
 
-   /**
+    /**
      * Return the number of items in the queue.
+     * @return     {Integer}
      */
     public int size() {
-        return N;
+        return n;
     }
 
     /**
      * Return the item least recently added to the queue.
      * Throw an exception if the queue is empty.
+     * @return     {Item}
      */
     public Item peek() {
         if (isEmpty()) {
@@ -46,6 +63,7 @@ public class Queue<Item> {
 
     /**
      * Add the item to the queue.
+     * param      <Item> {The Item}
      */
     public void enqueue(Item item) {
         Node x = new Node();
@@ -57,12 +75,13 @@ public class Queue<Item> {
             last.next = x;
             last = x;
         }
-        N++;
+        n++;
     }
 
     /**
      * Remove and return the item on the queue least recently added.
      * Throw an exception if the queue is empty.
+     * @return     {Item}
      */
     public Item dequeue() {
         if (isEmpty()) {
@@ -71,7 +90,7 @@ public class Queue<Item> {
         }
         Item item = first.item;
         first = first.next;
-        N--;
+        n--;
         // to avoid loitering
         if (isEmpty()) {
             last = null;
