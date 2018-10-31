@@ -1,4 +1,6 @@
-
+/**
+ * Class for digraph.
+ */
 public class Digraph {
     /**
      * {number of vertices in this digraph}.
@@ -42,7 +44,7 @@ public class Digraph {
      *
      * @return the number of vertices in this digraph
      */
-    public int V() {
+    public int vertices() {
         return vertices;
     }
 
@@ -51,7 +53,7 @@ public class Digraph {
      *
      * @return the number of edges in this digraph
      */
-    public int E() {
+    public int edges() {
         return edges;
     }
 
