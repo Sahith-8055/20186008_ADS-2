@@ -19,7 +19,13 @@ public class Stack<Item> {
      * @param      <Item>  The item
      */
     private static class Node<Item> {
+        /**
+         * {Item}.
+         */
         private Item item;
+        /**
+         * {Next of type node}.
+         */
         private Node<Item> next;
     }
 
