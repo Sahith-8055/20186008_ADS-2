@@ -1,10 +1,24 @@
 import java.util.NoSuchElementException;
-
+/**
+ * Class for digraph.
+ */
 public class Digraph {
-    private final int V;           // number of vertices in this digraph
-    private int E;                 // number of edges in this digraph
-    private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
-    private int[] indegree;        // indegree[v] = indegree of vertex v
+    /**
+     * {number of vertices in this digraph}.
+     */
+    private final int V;
+    /**
+     * {number of edges in this digraph}.
+     */
+    private int E;
+    /**
+     * {adj[v] = adjacency list for vertex v}.
+     */
+    private Bag<Integer>[] adj;
+    /**
+     * {indegree[v] = indegree of vertex v}.
+     */
+    private int[] indegree;
 
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
