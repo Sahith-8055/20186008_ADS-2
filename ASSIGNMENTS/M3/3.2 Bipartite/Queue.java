@@ -21,7 +21,13 @@ public class Queue<Item> {
      * Class for node.
      */
     private class Node {
+        /**
+         * {Item}.
+         */
         private Item item;
+        /**
+         * {Node of type next}.
+         */
         private Node next;
     }
 
@@ -63,9 +69,9 @@ public class Queue<Item> {
 
     /**
      * Add the item to the queue.
-     * param      <Item> {The Item}
+     * @param      <Item>  {The Item}
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
         Node x = new Node();
         x.item = item;
         if (isEmpty()) {
