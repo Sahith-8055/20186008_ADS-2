@@ -3,8 +3,12 @@ Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:45:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:54:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:63: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:75: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...

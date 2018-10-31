@@ -42,7 +42,7 @@ public class Digraph {
      *
      * @return the number of vertices in this digraph
      */
-    public int vertices() {
+    public int V() {
         return vertices;
     }
 
@@ -51,7 +51,7 @@ public class Digraph {
      *
      * @return the number of edges in this digraph
      */
-    public int edges() {
+    public int E() {
         return edges;
     }
 
@@ -60,8 +60,7 @@ public class Digraph {
      *
      * @param  v the tail vertex
      * @param  w the head vertex
-     * @throws IllegalArgumentException unless both
-     * {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
     public void addEdge(final int v, final int w) {
         adj[v].add(w);
@@ -73,8 +72,7 @@ public class Digraph {
      * Returns the vertices adjacent from vertex {@code v} in this digraph.
      *
      * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v}
-     * in this digraph, as an iterable
+     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public Iterable<Integer> adj(final int v) {
