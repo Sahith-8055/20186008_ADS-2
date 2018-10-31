@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:59:8: Unused @param tag for '<item>'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:61:32: Expected @param tag for 'item'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
