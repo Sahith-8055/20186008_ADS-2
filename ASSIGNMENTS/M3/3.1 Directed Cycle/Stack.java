@@ -55,7 +55,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     /**
-     * {Method to push into a stack}
+     * {Method to push into a stack}.
      *
      * @param      item  The item
      */
@@ -155,4 +155,5 @@ public class Stack<Item> implements Iterable<Item> {
         }
     }
 }
+
 
