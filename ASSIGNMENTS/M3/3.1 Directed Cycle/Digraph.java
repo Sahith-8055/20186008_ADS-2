@@ -23,7 +23,7 @@ public class Digraph {
      * @param  v the number of vertices
      * @throws IllegalArgumentException if {@code v < 0}
      */
-    public Digraph(int v) {
+    public Digraph(final int v) {
         if (v < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
@@ -62,7 +62,7 @@ public class Digraph {
      * @param  w the head vertex
      * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         adj[v].add(w);
         indegree[w]++;
         edges++;
@@ -75,7 +75,7 @@ public class Digraph {
      * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
 
@@ -87,7 +87,7 @@ public class Digraph {
      * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int outdegree(int v) {
+    public int outdegree(final int v) {
         return adj[v].size();
     }
 
@@ -99,7 +99,7 @@ public class Digraph {
      * @return the indegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int indegree(int v) {
+    public int indegree(final int v) {
         return indegree[v];
     }
 
