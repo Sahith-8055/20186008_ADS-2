@@ -3,11 +3,11 @@ public class Digraph {
     /**
      * {number of vertices in this digraph}.
      */
-    private final int V;
+    private final int vertices;
     /**
      * {number of edges in this digraph}.
      */
-    private int E;
+    private int edges;
     /**
      * {adj[v] = adjacency list for vertex v}.
      */
@@ -18,19 +18,22 @@ public class Digraph {
     private int[] indegree;
 
     /**
-     * Initializes an empty digraph with <em>V</em> vertices.
+     * Initializes an empty digraph with <em>v</em> vertices.
      *
-     * @param  V the number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
+     * @param  v the number of vertices
+     * @throws IllegalArgumentException if {@code v < 0}
      */
-    public Digraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+    public Digraph(int v) {
+        if (v < 0) {
+            throw new IllegalArgumentException(
+                "Number of vertices in a Digraph must be nonnegative");
+        }
+        this.vertices = v;
+        this.edges = 0;
+        indegree = new int[vertices];
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Integer>();
         }
     }
 
@@ -40,7 +43,7 @@ public class Digraph {
      * @return the number of vertices in this digraph
      */
     public int V() {
-        return V;
+        return vertices;
     }
 
     /**
@@ -49,14 +52,7 @@ public class Digraph {
      * @return the number of edges in this digraph
      */
     public int E() {
-        return E;
-    }
-
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        return edges;
     }
 
     /**
@@ -67,11 +63,9 @@ public class Digraph {
      * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
     public void addEdge(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edges++;
     }
 
     /**
@@ -82,7 +76,6 @@ public class Digraph {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public Iterable<Integer> adj(int v) {
-        validateVertex(v);
         return adj[v];
     }
 
@@ -95,7 +88,6 @@ public class Digraph {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int outdegree(int v) {
-        validateVertex(v);
         return adj[v].size();
     }
 
@@ -108,7 +100,6 @@ public class Digraph {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int indegree(int v) {
-        validateVertex(v);
         return indegree[v];
     }
 
@@ -118,10 +109,10 @@ public class Digraph {
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
+        Digraph reverse = new Digraph(vertices);
+        for (int j = 0; j < vertices; j++) {
+            for (int w : adj(j)) {
+                reverse.addEdge(w, j);
             }
         }
         return reverse;
