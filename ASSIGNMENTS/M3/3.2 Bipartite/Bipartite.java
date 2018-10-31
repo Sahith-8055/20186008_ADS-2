@@ -25,13 +25,10 @@ public class Bipartite {
                 dfs(G, v);
             }
         }
-        assert check(G);
     }
-
     private void dfs(Graph G, int v) {
         marked[v] = true;
         for (int w : G.adj(v)) {
-
             // short circuit if odd-length cycle found
             if (cycle != null) return;
 
@@ -41,7 +38,6 @@ public class Bipartite {
                 color[w] = !color[v];
                 dfs(G, w);
             }
-
             // if v-w create an odd-length cycle, find it
             else if (color[w] == color[v]) {
                 isBipartite = false;
@@ -76,8 +72,9 @@ public class Bipartite {
      *         is not bipartite
      */
     public boolean color(int v) {
-        if (!isBipartite)
+        if (!isBipartite) {
             throw new UnsupportedOperationException("graph is not bipartite");
+        }
         return color[v];
     }
 
@@ -91,33 +88,5 @@ public class Bipartite {
      */
     public Iterable<Integer> oddCycle() {
         return cycle;
-    }
-
-    private boolean check(Graph G) {
-        // graph is bipartite
-        if (isBipartite) {
-            for (int v = 0; v < G.vertices(); v++) {
-                for (int w : G.adj(v)) {
-                    if (color[v] == color[w]) {
-                        System.out.println("edge %d-%d with %d and %d in same side of bipartition\n" + v + w + v + w);
-                        return false;
-                    }
-                }
-            }
-        }
-        // graph has an odd-length cycle
-        else {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : oddCycle()) {
-                if (first == -1) first = v;
-                last = v;
-            }
-            if (first != last) {
-                System.out.println("cycle begins with %d and ends with %d\n" + first + last);
-                return false;
-            }
-        }
-        return true;
     }
 }
