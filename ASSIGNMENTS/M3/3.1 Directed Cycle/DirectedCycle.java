@@ -104,7 +104,8 @@ public class DirectedCycle {
                 last = v;
             }
             if (first != last) {
-                System.out.println("cycle begins with %d and ends with %d\n" + first + last);
+                System.out.println(
+                    "cycle begins with %d and ends with %d\n" + first + last);
                 return false;
             }
         }
