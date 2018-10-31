@@ -49,12 +49,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:59:8: Unused @param tag for '{Item}'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:61:22: Parameter item should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:61:27: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:74: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:90: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:101: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:142: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Stack.java:57: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 2 errors.

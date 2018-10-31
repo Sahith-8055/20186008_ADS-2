@@ -55,10 +55,11 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     /**
-     * Add the item to the stack.
-     * @param        {Item}  The Item
+     * {Method to push into a stack}
+     *
+     * @param      item  The item
      */
-    public void push(Item item) {
+    public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
@@ -69,7 +70,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Delete and return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
-     * param      <Item> {The Item}
+     * @return      {Item}
      */
     public Item pop() {
         if (isEmpty()) {
@@ -85,7 +86,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
-     * param      <Item> {The Item}
+     * @return      {Item}
      */
     public Item peek() {
         if (isEmpty()) {
@@ -96,7 +97,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**
      * Return string representation.
-     * return     {String}.
+     * @return     {String}.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -140,7 +141,7 @@ public class Stack<Item> implements Iterable<Item> {
             throw new UnsupportedOperationException();
         }
         /**
-         * {Method for next}
+         * {Method for next}.
          *
          * @return     {Item}
          */
