@@ -1,12 +1,9 @@
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:11:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:14:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:61:21: Parameter item should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:61:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:100: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:106: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:59:8: Unused @param tag for '<item>'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Bag.java:61:32: Expected @param tag for 'item'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
