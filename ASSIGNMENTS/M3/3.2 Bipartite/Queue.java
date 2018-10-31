@@ -67,9 +67,11 @@ public class Queue<Item> {
         return first.item;
     }
 
+
     /**
-     * Add the item to the queue.
-     * @param      <Item>  {The Item}
+     * {Add the item to the queue}.
+     *
+     * @param      item  The item
      */
     public void enqueue(final Item item) {
         Node x = new Node();
@@ -104,4 +106,5 @@ public class Queue<Item> {
         return item;
     }
 }
+
 
