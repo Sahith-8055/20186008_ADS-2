@@ -27,17 +27,17 @@ public class Bipartite {
      * Determines whether an undirected graph is bipartite and finds either a
      * bipartition or an odd-length cycle.
      *
-     * @param  G the graph
+     * @param  graph the graph
      */
-    Bipartite(final Graph G) {
+    Bipartite(final Graph graph) {
         isBipartite = true;
-        color  = new boolean[G.vertices()];
-        marked = new boolean[G.vertices()];
-        edgeTo = new int[G.vertices()];
+        color  = new boolean[graph.vertices()];
+        marked = new boolean[graph.vertices()];
+        edgeTo = new int[graph.vertices()];
 
-        for (int v = 0; v < G.vertices(); v++) {
+        for (int v = 0; v < graph.vertices(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(graph, v);
             }
         }
     }
@@ -45,12 +45,12 @@ public class Bipartite {
     /**
      * {Method for Depth First Search}.
      * Time complexity of this method is O(V + E).
-     * @param      G     {Graph}
+     * @param      graph     {Graph}
      * @param      v     {Source Vertex}
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph graph, final int v) {
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : graph.adj(v)) {
             // short circuit if odd-length cycle found
             if (cycle != null) {
                 return;
@@ -59,10 +59,9 @@ public class Bipartite {
             if (!marked[w]) {
                 edgeTo[w] = v;
                 color[w] = !color[v];
-                dfs(G, w);
-            }
-            // if v-w create an odd-length cycle, find it
-            else if (color[w] == color[v]) {
+                dfs(graph, w);
+                // if v-w create an odd-length cycle, find it
+            } else if (color[w] == color[v]) {
                 isBipartite = false;
                 cycle = new Stack<Integer>();
                 cycle.push(w);
@@ -88,8 +87,10 @@ public class Bipartite {
      * Returns the side of the bipartite that vertex {@code v} is on.
      *
      * @param  v the vertex
-     * @return the side of the bipartition that vertex {@code v} is on; two vertices
-     *         are in the same side of the bipartition if and only if they have the
+     * @return the side of the bipartition
+     *         that vertex {@code v} is on; two vertices
+     *         are in the same side of the
+     *         bipartition if and only if they have the
      *         same color
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      * @throws UnsupportedOperationException if this method is called when the graph
