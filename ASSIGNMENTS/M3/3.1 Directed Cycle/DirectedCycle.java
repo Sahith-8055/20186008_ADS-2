@@ -20,36 +20,40 @@ public class DirectedCycle {
     private Stack<Integer> cycle;
 
     /**
-     * Determines whether the digraph {@code G} has a directed cycle and, if so,
+     * Determines whether the digraph {@code digraph}.
+     * has a directed cycle and, if so,
      * finds such a cycle.
-     * @param G the digraph
+     * @param digraph the digraph
      */
-    public DirectedCycle(Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v] && cycle == null) dfs(G, v);
+    public DirectedCycle(final Digraph digraph) {
+        marked  = new boolean[digraph.V()];
+        onStack = new boolean[digraph.V()];
+        edgeTo  = new int[digraph.V()];
+        for (int v = 0; v < digraph.V(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(digraph, v);
+            }
+        }
     }
 
     /**
      * {check that algorithm computes
      * either the topological order or finds a directed cycle}.
      *
-     * @param      G     {Digraph}
+     * @param      digraph     {Digraph}
      * @param      v     {Source Vertex}
      */
-    private void dfs(Digraph G, int v) {
+    private void dfs(final Digraph digraph, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : digraph.adj(v)) {
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            // found new vertex, so recur
+                // found new vertex, so recur
             } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(digraph, w);
                 // trace back directed cycle
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
