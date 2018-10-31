@@ -55,19 +55,15 @@ Checkstyle ends with 20 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:21:28: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:38:28: Expected @param tag for 'V'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:38:28: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:38:41: Expected @param tag for 'E'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:38:41: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:54: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:61: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:68:35: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:68:48: Expected @param tag for 'w'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:77: Expected @return tag. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:77:34: Parameter v should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:77:38: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:37: Expected @return tag. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:44: Expected @return tag. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:51:35: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:51:48: Expected @param tag for 'w'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:60: Expected @return tag. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:60:34: Parameter v should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Graph.java:60:38: Expected @param tag for 'v'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.2 Bipartite\Queue.java:4: Line has trailing spaces. [RegexpSingleline]
