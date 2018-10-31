@@ -6,11 +6,11 @@ public class Digraph {
     /**
      * {number of vertices in this digraph}.
      */
-    private final int V;
+    private final int vertices;
     /**
      * {number of edges in this digraph}.
      */
-    private int E;
+    private int edges;
     /**
      * {adj[v] = adjacency list for vertex v}.
      */
@@ -26,17 +26,17 @@ public class Digraph {
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int V) {
-        if (V < 0) {
+    public Digraph(int v) {
+        if (v < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+        this.vertices = v;
+        this.edges = 0;
+        indegree = new int[vertices];
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int j = 0; j < vertices; j++) {
+            adj[j] = new Bag<Integer>();
         }
     }
     /**
@@ -45,7 +45,7 @@ public class Digraph {
      * @return the number of vertices in this digraph
      */
     public int V() {
-        return V;
+        return vertices;
     }
 
     /**
@@ -54,7 +54,7 @@ public class Digraph {
      * @return the number of edges in this digraph
      */
     public int E() {
-        return E;
+        return edges;
     }
 
     /**
@@ -67,7 +67,7 @@ public class Digraph {
     public void addEdge(int v, int w) {
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edges++;
     }
 
     /**
@@ -111,10 +111,10 @@ public class Digraph {
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
+        Digraph reverse = new Digraph(vertices);
+        for (int i = 0; i < vertices; i++) {
+            for (int w : adj(i)) {
+                reverse.addEdge(w, i);
             }
         }
         return reverse;

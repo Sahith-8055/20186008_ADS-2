@@ -2,11 +2,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:9:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:13:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:29:20: Parameter V should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:29:24: 'V' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:29:24: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:26:8: Unused @param tag for 'V'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:29:20: Parameter v should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:29:24: Expected @param tag for 'v'. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:47:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:56:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:65: Line is longer than 80 characters (found 93). [LineLength]
@@ -17,7 +15,7 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:92:26: Parameter v should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\Digraph.java:104:25: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\DirectedCycle.java:27:26: Parameter G should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M3\3.1 Directed Cycle\DirectedCycle.java:27:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
