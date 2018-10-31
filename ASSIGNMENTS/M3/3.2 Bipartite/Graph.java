@@ -17,6 +17,7 @@ public class Graph {
 
     /**
      * Create an empty graph with V vertices.
+     * @param     v     {Vertex}
      */
     public Graph(final int v) {
         if (v < 0) {
@@ -33,6 +34,7 @@ public class Graph {
 
     /**
      * Return the number of vertices in the graph.
+     * @return      {Integer}
      */
     public int vertices() {
         return vertices;
@@ -40,6 +42,7 @@ public class Graph {
 
     /**
      * Return the number of edges in the graph.
+     * @return      {Integer}
      */
     public int edges() {
         return edges;
@@ -47,6 +50,8 @@ public class Graph {
 
     /**
      * Add the edge v-w to graph.
+     * @param      v       {Vertex v}
+     * @param       w      {Vertex w}
      */
     public void addEdge(final int v, final int w) {
         edges++;
@@ -56,8 +61,9 @@ public class Graph {
 
     /**
      * Return the list of neighbors of vertex v as in Iterable.
+     * @return     {Iterable}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
 }
