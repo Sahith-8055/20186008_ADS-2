@@ -54,17 +54,19 @@ public class WordNet {
             }
         }
         DirectedCycle dc = new DirectedCycle(d);
+        int flag = 0;
+        for (int i = 0; i < count; i++) {
+            if (d.outdegree(i) == 0) {
+                flag++;
+            }
+            if (flag > 1) {
+                System.out.println("Multiple roots");
+            }
+        }
         if (dc.hasCycle()) {
             System.out.println("Cycle detected");
         } else {
             System.out.println(d);
-        }
-        int flag = 0;
-        for (int i = 0; i < count; i++) {
-            if (d.outdegree(i) == 0) {
-                System.out.println("Multiple roots");
-                return;
-            }
         }
     }
 }
