@@ -61,6 +61,7 @@ public class WordNet {
             }
             if (flag > 1) {
                 System.out.println("Multiple roots");
+                return;
             }
         }
         if (dc.hasCycle()) {
