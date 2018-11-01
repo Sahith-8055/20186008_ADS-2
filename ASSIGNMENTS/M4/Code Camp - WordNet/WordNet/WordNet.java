@@ -42,9 +42,9 @@ public class WordNet {
             syn1 = tokens[1].split(" ");
         }
         Digraph digraphObj = new Digraph(count);
-        readHyperNyms(hypernyms, digraphObj);
+        readHyperNyms(hypernyms, digraphObj, count);
     }
-    public void readHyperNyms(final String s, final Digraph d) {
+    public void readHyperNyms(final String s, final Digraph d, int count) {
         In in = new In("./Files/" + s);
         String[] tokens1 = null;
         while (!in.isEmpty()) {
@@ -54,6 +54,13 @@ public class WordNet {
             }
         }
         DirectedCycle dc = new DirectedCycle(d);
+        int flag = 0;
+        for (int i = 0; i < count; i++) {
+            if (d.outdegree(i) == 0) {
+                System.out.println("Multiple roots");
+                return;
+            }
+        }
         if (dc.hasCycle()) {
             System.out.println("Cycle detected");
         } else {
