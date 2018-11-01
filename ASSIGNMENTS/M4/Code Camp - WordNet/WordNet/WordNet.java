@@ -49,9 +49,9 @@ public class WordNet {
         String[] tokens1 = null;
         while (!in.isEmpty()) {
             tokens1 = in.readString().split(",");
-            int a = Integer.parseInt(tokens1[0]);
-            int b = Integer.parseInt(tokens1[1]);
-            d.addEdge(a, b);
+            for (int i = 1; i < tokens1.length; i++) {
+                d.addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[i]));
+            }
         }
         DirectedCycle dc = new DirectedCycle(d);
         if (dc.hasCycle()) {
@@ -60,7 +60,4 @@ public class WordNet {
             System.out.println(d);
         }
     }
-
-    // do unit testing of this class
-
 }

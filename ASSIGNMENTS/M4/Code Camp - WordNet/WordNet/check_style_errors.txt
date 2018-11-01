@@ -475,5 +475,6 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\WordNet.java:31:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'readHyperNyms' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'readHyperNyms' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\WordNet.java:53: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 10 errors.
