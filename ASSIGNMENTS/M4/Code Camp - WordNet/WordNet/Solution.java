@@ -11,6 +11,10 @@ public class Solution {
             WordNet wordNet = new WordNet(synsetsFileName, hypernymnsFileName);
             break;
         case "Queries":
+            String[] a = StdIn.readString().split(" ");
+            if (a[0].equals("null") || a[1].equals("null")) {
+                System.out.println("IllegalArgumentException");
+            }
             break;
         default:
             break;
