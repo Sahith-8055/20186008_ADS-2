@@ -44,7 +44,7 @@ public class WordNet {
         Digraph digraphObj = new Digraph(count);
         readHyperNyms(hypernyms, digraphObj);
     }
-    public void readHyperNyms(String s, Digraph d) {
+    public void readHyperNyms(final String s, final Digraph d) {
         In in = new In("./Files/" + s);
         String[] tokens1 = null;
         while (!in.isEmpty()) {
@@ -53,7 +53,12 @@ public class WordNet {
             int b = Integer.parseInt(tokens1[1]);
             d.addEdge(a, b);
         }
-        System.out.println(d);
+        DirectedCycle dc = new DirectedCycle(d);
+        if (dc.hasCycle()) {
+            System.out.println("Cycle detected");
+        } else {
+            System.out.println(d);
+        }
     }
 
     // do unit testing of this class
