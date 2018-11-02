@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
  *
  * @param      <Item>  The item
  */
-public class Bag<Item> {
+public class Bag<Item> implements Iterable<Item> {
     /**
      * {beginning of bag}.
      */
@@ -70,5 +70,42 @@ public class Bag<Item> {
         first.item = item;
         first.next = oldfirst;
         n++;
+    }
+
+
+    /**
+     * Returns an iterator that iterates over the items.
+     * in this bag in arbitrary order.
+     *
+     * @return an iterator that iterates over the items.
+     * in this bag in arbitrary order
+     */
+    public Iterator<Item> iterator()  {
+        return new ListIterator<Item>(first);
+    }
+
+
+    private class ListIterator<Item> implements Iterator<Item> {
+        private Node<Item> current;
+
+        public ListIterator(Node<Item> first) {
+            current = first;
+        }
+
+        public boolean hasNext() {
+            return current != null;
+        }
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
+        public Item next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
+            Item item = current.item;
+            current = current.next;
+            return item;
+        }
     }
 }

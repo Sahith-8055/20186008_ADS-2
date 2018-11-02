@@ -1,10 +1,17 @@
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:1:8: Unused import - java.util.Iterator. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:67:21: Parameter item should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:88: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:89:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:91:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:91:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:91:29: Parameter first should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:91:40: 'first' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:95:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:98:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Bag.java:102:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:1: Missing a Javadoc comment. [JavadocType]
