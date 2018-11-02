@@ -126,10 +126,10 @@ public class WordNet {
      *
      * @param      s      {String}
      * @param      d      {Digraph}
-     * @param      count  The count of vertices
+     * @param      count1  The count of vertices
      */
-    public void readHyperNyms(final String s, final Digraph d, final int count) {
-        int count1 = count;
+    public void readHyperNyms(
+        final String s, final Digraph d, final int count1) {
         In in = new In("./Files/" + s);
         String[] tokens1 = null;
         while (!in.isEmpty()) {

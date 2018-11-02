@@ -14,7 +14,7 @@ public class SAP {
     /**
      * Constructs the object.
      *
-     * @param      G     {Digraph}
+     * @param      di     {Digraph}
      */
     public SAP(final Digraph di) {
         this.digraph = new Digraph(di);

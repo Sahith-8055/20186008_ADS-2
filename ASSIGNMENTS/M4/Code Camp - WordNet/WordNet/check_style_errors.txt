@@ -371,10 +371,8 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\SAP.java:17:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\SAP.java:19:30: Expected @param tag for 'di'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
@@ -433,7 +431,5 @@ Audit done.
 Checkstyle ends with 16 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\WordNet.java:131: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\WordNet.java:131:74: 'count' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
