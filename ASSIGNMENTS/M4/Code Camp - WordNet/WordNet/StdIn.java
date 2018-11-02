@@ -36,7 +36,7 @@ public final class StdIn {
     }
 
 
-   /**
+    /**
      * Returns true if standard input is empty (except possibly for whitespace).
      * Use this method to know whether the next call to {@link #readString()},
      * {@link #readDouble()}, etc will succeed.
@@ -48,7 +48,7 @@ public final class StdIn {
         return !scanner.hasNext();
     }
 
-   /**
+    /**
      * Returns true if standard input has a next line.
      * Use this method to know whether the
      * next call to {@link #readLine()} will succeed.
@@ -62,7 +62,7 @@ public final class StdIn {
     }
 
 
-   /**
+    /**
      * Reads and returns the next line, excluding the line separator if present.
      *
      * @return the next line, excluding the line separator if present;
@@ -78,9 +78,9 @@ public final class StdIn {
         }
         return line;
     }
-
-    //// end: section (2 of 2) of code duplicated from In to StdIn
-    // do this once when StdIn is initialized
+    /**
+     * {Static Method}.
+     */
     static {
         resync();
     }
