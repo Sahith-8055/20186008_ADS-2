@@ -38,7 +38,7 @@ public final class In {
 
     private Scanner scanner;
 
-   /**
+    /**
      * Initializes an input stream from standard input.
      */
     public In() {
@@ -46,7 +46,7 @@ public final class In {
         scanner.useLocale(LOCALE);
     }
 
-   /**
+    /**
      * Initializes an input stream from a socket.
      *
      * @param  socket the socket
@@ -65,7 +65,7 @@ public final class In {
         }
     }
 
-   /**
+    /**
      * Initializes an input stream from a URL.
      *
      * @param  url the URL
@@ -85,7 +85,7 @@ public final class In {
         }
     }
 
-   /**
+    /**
      * Initializes an input stream from a file.
      *
      * @param  file the file
@@ -107,7 +107,7 @@ public final class In {
     }
 
 
-   /**
+    /**
      * Initializes an input stream from a filename or web page name.
      *
      * @param  name the filename or web page name
@@ -184,7 +184,7 @@ public final class In {
     ////  begin: section (2 of 2) of code duplicated from In to StdIn,
     ////  with all methods changed from "public" to "public static".
 
-   /**
+    /**
      * Returns true if input stream is empty (except possibly whitespace).
      * Use this to know whether the next call to {@link #readString()},
      * {@link #readDouble()}, etc will succeed.

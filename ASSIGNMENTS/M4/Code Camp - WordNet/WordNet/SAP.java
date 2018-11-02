@@ -16,8 +16,8 @@ public class SAP {
      *
      * @param      G     {Digraph}
      */
-    public SAP(final Digraph G) {
-        this.digraph = new Digraph(G);
+    public SAP(final Digraph di) {
+        this.digraph = new Digraph(di);
         this.ancesId = 0;
     }
     /**
@@ -30,7 +30,7 @@ public class SAP {
     }
 
     /**
-     * {Length of ancestral path}
+     * {Length of ancestral path}.
      *
      * @param      v     {Iterable}
      * @param      w     {Iterable}
@@ -38,8 +38,10 @@ public class SAP {
      * @return     {Integer}
      */
     public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
-        BreadthFirstDirectedPaths bfsp = new BreadthFirstDirectedPaths(digraph, v);
-        BreadthFirstDirectedPaths bfsp1 = new BreadthFirstDirectedPaths(digraph, w);
+        BreadthFirstDirectedPaths bfsp;
+        bfsp = new BreadthFirstDirectedPaths(digraph, v);
+        BreadthFirstDirectedPaths bfsp1;
+        bfsp1 = new BreadthFirstDirectedPaths(digraph, w);
         int a = -1;
         for (int i = 0; i < digraph.V(); i++) {
             if (bfsp.hasPathTo(i) && bfsp1.hasPathTo(i)) {
@@ -54,7 +56,7 @@ public class SAP {
     }
 
     /**
-     * {a common ancestor that participates in shortest ancestral path}
+     * {a common ancestor that participates in shortest ancestral path}.
      *
      * @param      v     {Iterable}
      * @param      w     {Iterable}

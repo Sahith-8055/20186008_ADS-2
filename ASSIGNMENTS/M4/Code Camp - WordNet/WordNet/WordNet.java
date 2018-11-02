@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.ArrayList;
 /**
  * Class for word net.
@@ -60,7 +59,7 @@ public class WordNet {
     }
 
     /**
-     * {distance between nounA and nounB (defined below)}
+     * {distance between nounA and nounB (defined below)}.
      *
      * @param      nounA  The nouna
      * @param      nounB  The nounb
@@ -129,17 +128,20 @@ public class WordNet {
      * @param      d      {Digraph}
      * @param      count  The count of vertices
      */
-    public void readHyperNyms(final String s, final Digraph d, int count) {
+    public void readHyperNyms(final String s, final Digraph d, final int count) {
+        int count1 = count;
         In in = new In("./Files/" + s);
         String[] tokens1 = null;
         while (!in.isEmpty()) {
             tokens1 = in.readString().split(",");
             for (int i = 1; i < tokens1.length; i++) {
-                d.addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[i]));
+                d.addEdge(
+                    Integer.parseInt(tokens1[0]),
+                    Integer.parseInt(tokens1[i]));
             }
         }
         int flag = 0;
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < count1; i++) {
             if (d.outdegree(i) == 0) {
                 flag++;
             }

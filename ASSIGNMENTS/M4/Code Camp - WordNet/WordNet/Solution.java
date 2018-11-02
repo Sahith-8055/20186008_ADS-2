@@ -32,8 +32,10 @@ public final class Solution {
                             "IllegalArgumentException");
                     } else {
                         System.out.println(
-                            "distance = " + wordNet.distance(querys[0], querys[1]) +
-                            ", ancestor = " + wordNet.sap(querys[0], querys[1]));
+                            "distance = " + wordNet.distance(
+                                querys[0], querys[1])
+                            + ", ancestor = " + wordNet.sap(
+                                querys[0], querys[1]));
                     }
                 }
                 break;
