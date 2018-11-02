@@ -1,16 +1,42 @@
+/**
+ * Class for sap.
+ */
 public class SAP {
+    /**
+     * {Declaring a digraph object}.
+     */
     private Digraph digraph;
-    int ancesId;
-    // constructor takes a digraph (not necessarily a DAG)
+    /**
+     * {Id of ancestor}.
+     */
+    private int ancesId;
+
+    /**
+     * Constructs the object.
+     *
+     * @param      G     {Digraph}
+     */
     public SAP(final Digraph G) {
         this.digraph = new Digraph(G);
         this.ancesId = 0;
     }
+    /**
+     * Gets the graph.
+     *
+     * @return     The graph.
+     */
     public Digraph getGraph() {
         return this.digraph;
     }
 
-    // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
+    /**
+     * {Length of ancestral path}
+     *
+     * @param      v     {Iterable}
+     * @param      w     {Iterable}
+     *
+     * @return     {Integer}
+     */
     public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
         BreadthFirstDirectedPaths bfsp = new BreadthFirstDirectedPaths(digraph, v);
         BreadthFirstDirectedPaths bfsp1 = new BreadthFirstDirectedPaths(digraph, w);
@@ -27,7 +53,14 @@ public class SAP {
         return a;
     }
 
-    // a common ancestor that participates in shortest ancestral path; -1 if no such path
+    /**
+     * {a common ancestor that participates in shortest ancestral path}
+     *
+     * @param      v     {Iterable}
+     * @param      w     {Iterable}
+     *
+     * @return     {Integer}
+     */
     public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
         return ancesId;
     }

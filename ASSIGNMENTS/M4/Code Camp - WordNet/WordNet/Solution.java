@@ -1,8 +1,14 @@
-public class Solution {
-    public Solution() {
-        // Constructor.
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // Unused Constructor.
     }
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         String synsetsFileName = StdIn.readLine();
         String hypernymnsFileName = StdIn.readLine();
         String token = StdIn.readLine();
@@ -13,14 +19,14 @@ public class Solution {
                 System.out.println(wordNet.getDigraph());
                 break;
             case "Queries":
-                // WordNet wordNet1 = new WordNet(synsetsFileName, hypernymnsFileName);
                 while (StdIn.hasNextLine()) {
                     String[] querys = StdIn.readLine().split(" ");
-                    // String b = StdIn.readLine();
                     if (querys[0].equals("null") || querys[1].equals("null")) {
                         throw new IllegalArgumentException("IllegalArgumentException");
                     } else {
-                        System.out.println("distance = " + wordNet.distance(querys[0], querys[1]) + ", ancestor = " + wordNet.sap(querys[0], querys[1]));
+                        System.out.println(
+                            "distance = " + wordNet.distance(querys[0], querys[1]) +
+                            ", ancestor = " + wordNet.sap(querys[0], querys[1]));
                     }
                 }
                 break;
@@ -30,7 +36,6 @@ public class Solution {
 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
-            // ex.printStackTrace();
         }
     }
 }

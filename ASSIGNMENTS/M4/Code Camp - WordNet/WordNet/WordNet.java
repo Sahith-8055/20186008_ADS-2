@@ -1,32 +1,72 @@
 import java.util.Arrays;
-import java.util.List;
 import java.util.ArrayList;
+/**
+ * Class for word net.
+ */
 public class WordNet {
+    /**
+     * {Declaring an object for LinearProbingHashing}.
+     */
     private LinearProbingHashST<String, ArrayList<Integer>> hash;
-    private ArrayList<String> synsetsList = new ArrayList<String>();
+    /**
+     * {ArrayList declaration}.
+     */
+    private ArrayList<String> synsetsList;
+    /**
+     * {Creating a object of SAP.java}.
+     */
     private SAP sap;
+    /**
+     * {Count of vertices}.
+     */
     private int count;
+    /**
+     * {Creating a digraph object}.
+     */
     private Digraph digraphObj;
-
-    // constructor takes the name of the two input files
+    /**
+     * Constructs the object.
+     *
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
+     */
     public WordNet(final String synsets, final String hypernyms) {
         hash = new LinearProbingHashST<String, ArrayList<Integer>>();
+        synsetsList = new ArrayList<String>();
         this.count = 0;
         readSynsets(synsets, hypernyms);
         sap = new SAP(digraphObj);
     }
 
-    //returns all WordNet nouns
+
+    /**
+     * {returns all WordNet nouns}.
+     *
+     * @return     {Iterable}
+     */
     public Iterable<String> nouns() {
         return hash.keys();
     }
 
-    // is the word a WordNet noun?
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
     public boolean isNoun(final String word) {
         return hash.contains(word);
     }
 
-    // distance between nounA and nounB (defined below)
+    /**
+     * {distance between nounA and nounB (defined below)}
+     *
+     * @param      nounA  The nouna
+     * @param      nounB  The nounb
+     *
+     * @return     {Integer}
+     */
     public int distance(final String nounA, final String nounB) {
         if (nounA == null || nounB == null) {
             throw new IllegalArgumentException("IllegalArgumentException");
@@ -36,17 +76,29 @@ public class WordNet {
         return sap.length(a, b);
     }
 
-    // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // in a shortest ancestral path (defined below)
+
+    /**
+     * {Shortest Ancestral Path}.
+     *
+     * @param      nounA  The nouna
+     * @param      nounB  The nounb
+     *
+     * @return     {String}
+     */
     public String sap(final String nounA, final String nounB) {
         Iterable<Integer> a = hash.get(nounA);
         Iterable<Integer> b = hash.get(nounB);
         return synsetsList.get(sap.ancestor(a, b));
     }
 
+    /**
+     * Reads synsets.
+     *
+     * @param      s          {String}
+     * @param      hypernyms  The hypernyms
+     */
     public void readSynsets(final String s, final String hypernyms) {
         In in = new In("./Files" + "/" + s);
-        // String[] syn1 = null;
         int id;
         while (!in.isEmpty()) {
             this.count++;
@@ -70,6 +122,13 @@ public class WordNet {
         digraphObj = new Digraph(count);
         readHyperNyms(hypernyms, digraphObj, count);
     }
+    /**
+     * Reads hyper nyms.
+     *
+     * @param      s      {String}
+     * @param      d      {Digraph}
+     * @param      count  The count of vertices
+     */
     public void readHyperNyms(final String s, final Digraph d, int count) {
         In in = new In("./Files/" + s);
         String[] tokens1 = null;
@@ -93,6 +152,11 @@ public class WordNet {
             throw new IllegalArgumentException("Cycle detected");
         }
     }
+    /**
+     * Gets the digraph.
+     *
+     * @return     The digraph.
+     */
     public Digraph getDigraph() {
         return digraphObj;
     }
