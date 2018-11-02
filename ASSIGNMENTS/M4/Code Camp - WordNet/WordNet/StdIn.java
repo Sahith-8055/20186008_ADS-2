@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.InputMismatchException;
+//import java.util.ArrayList;
+//import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -37,7 +37,9 @@ public final class StdIn {
      * {used to read the entire input}.
      */
     private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
-
+    /**
+     * {Scanner object}.
+     */
     private static Scanner scanner;
 
     /**
@@ -107,9 +109,13 @@ public final class StdIn {
                 new java.io.BufferedInputStream(
                     System.in), CHARSET_NAME));
     }
-
-    private static void setScanner(Scanner scanner) {
-        StdIn.scanner = scanner;
+    /**
+     * Sets the scanner.
+     *
+     * @param      scanner  The scanner
+     */
+    private static void setScanner(final Scanner scanner1) {
+        StdIn.scanner = scanner1;
         StdIn.scanner.useLocale(LOCALE);
     }
 }

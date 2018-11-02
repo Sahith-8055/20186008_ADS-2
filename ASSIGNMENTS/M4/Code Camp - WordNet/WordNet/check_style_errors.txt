@@ -332,14 +332,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 4 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:1:8: Unused import - java.util.ArrayList. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:2:8: Unused import - java.util.InputMismatchException. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:41:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:111:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:111:36: Parameter scanner should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:111:44: 'scanner' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:115:8: Unused @param tag for 'scanner'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:117:50: Expected @param tag for 'scanner1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
