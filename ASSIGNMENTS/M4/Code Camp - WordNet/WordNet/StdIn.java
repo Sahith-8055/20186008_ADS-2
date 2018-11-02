@@ -112,7 +112,7 @@ public final class StdIn {
     /**
      * Sets the scanner.
      *
-     * @param      scanner  The scanner
+     * @param      scanner1  The scanner1
      */
     private static void setScanner(final Scanner scanner1) {
         StdIn.scanner = scanner1;

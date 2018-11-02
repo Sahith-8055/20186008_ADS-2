@@ -332,9 +332,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 4 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:115:8: Unused @param tag for 'scanner'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M4\Code Camp - WordNet\WordNet\StdIn.java:117:50: Expected @param tag for 'scanner1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
