@@ -26,7 +26,7 @@ public final class StdIn {
      * we maintain the invariant that this value}.
      */
     private static final Pattern WHITESPACE_PATTERN =
-    Pattern.compile("\\p{javaWhitespace}+");
+        Pattern.compile("\\p{javaWhitespace}+");
 
     /**
      * {makes whitespace significant}.
