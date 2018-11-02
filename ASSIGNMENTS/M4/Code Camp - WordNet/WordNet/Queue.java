@@ -1,4 +1,3 @@
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
@@ -83,7 +82,7 @@ public class Queue<Item> {
      *
      * @param  item the item to add
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
         Node<Item> oldlast = last;
         last = new Node<Item>();
         last.item = item;
