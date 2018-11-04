@@ -2,19 +2,62 @@ import java.util.ArrayList;
 class PageRank {
     private Digraph digraph;
     private double[] doubleArray;
+    private double[][] newArray;
+    private int k;
     PageRank(final Digraph d) {
         this.digraph = d;
+        this.k = 0;
         this.doubleArray = new double[digraph.V()];
-        for (int i = 0; i < doubleArray.length; i++) {
+        this.newArray = new double[1002][digraph.V()];
+        for (int i = 0; i < digraph.V(); i++) {
             doubleArray[i] = (1.0 / digraph.V());
+        }
+        newArray[0] = doubleArray;
+        checkCorner();
+        computeRank();
+    }
+    public void checkCorner() {
+        for (int i = 0; i < digraph.V(); i++) {
+            if (digraph.outdegree(i) == 0) {
+                for (int j = 0; j < digraph.V(); j++) {
+                    if (i != j) {
+                        digraph.addEdge(i, j);
+                    }
+                }
+            }
+        }
+    }
+    public void computeRank() {
+        int vertex = 0;
+        int outdegree = 0;
+        double[] pageranking = null;
+        double[] pageranker = null;
+        for (int k = 1; k <= 1000; k++) {
+            pageranking = new double[digraph.V()];
+            for (int i = 0; i < digraph.V(); i++) {
+                double pagerank = 0.0;
+                pageranker = new double[digraph.V()];
+                pageranker = newArray[k - 1];
+                for (int j : digraph.reverse().adj(i)) {
+                    vertex = j;
+                    outdegree = digraph.outdegree(vertex);
+                    pagerank += (pageranker[vertex] / outdegree);
+                }
+                pageranking[i] = pagerank;
+            }
+            newArray[k] = pageranking;
         }
     }
     public double getPR(final int v) {
-        return 0.0;
-
+        doubleArray = newArray[1000];
+        return doubleArray[v];
     }
     public String toString() {
-        return null;
+        String str = "";
+        for (int i = 0; i < digraph.V(); i++) {
+            str += i + " - " + getPR(i) + "\n";
+        }
+        return str;
     }
 }
 
@@ -69,6 +112,7 @@ public class Solution {
         // to read the adjacency list from std input
         // and build the graph
         PageRank pg = new PageRank(dg);
+        System.out.println(pg);
         // Create page rank object and pass the graph object to the constructor
 
         // print the page rank object
