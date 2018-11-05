@@ -83,7 +83,8 @@ class PageRank {
      * @return     The pr.
      */
     public double getPR(final int v) {
-        doubleArray = newArray[1000];
+        final int y = 1000;
+        doubleArray = newArray[y];
         return doubleArray[v];
     }
     /**
@@ -123,7 +124,8 @@ public final class Solution {
             String[] array = StdIn.readLine().split(" ");
             //int vertex = Integer.parseInt(array[0]);
             for (int i = 1; i < array.length; i++) {
-                dg.addEdge(Integer.parseInt(array[0]), Integer.parseInt(array[i]));
+                dg.addEdge(
+                    Integer.parseInt(array[0]), Integer.parseInt(array[i]));
             }
             vertices--;
         }
