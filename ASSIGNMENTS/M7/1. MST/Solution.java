@@ -16,7 +16,6 @@ public class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        Edge e = null;
         int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
@@ -25,7 +24,7 @@ public class Solution {
             int a = Integer.parseInt(tokens[0]);
             int b = Integer.parseInt(tokens[1]);
             double weight = Double.parseDouble(tokens[2]);
-            e = new Edge(a, b, weight);
+            Edge e = new Edge(a, b, weight);
             ewg.addEdge(e);
             vertices--;
         }
