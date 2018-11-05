@@ -23,10 +23,10 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:2:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:3:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:16:40: '100' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:16:69: '100.0' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:26:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:35:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:9:8: Unused @param tag for 'V'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:12:40: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:25:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:34:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
 Checkstyle ends with 8 errors.
 Starting audit...

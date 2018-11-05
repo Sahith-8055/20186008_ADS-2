@@ -3,10 +3,7 @@ Expected Output:
 614708.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
-	at Solution.main(Solution.java:22)
+3617557.00000
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -14,10 +11,11 @@ Expected Output:
 1.81000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
-	at Solution.main(Solution.java:22)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0.35"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -25,10 +23,11 @@ Expected Output:
 10.46351
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
-	at Solution.main(Solution.java:22)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0.11712"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -36,10 +35,7 @@ Expected Output:
 37.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
-	at Solution.main(Solution.java:22)
+42.00000
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -47,20 +43,14 @@ Expected Output:
 19.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
-	at Solution.main(Solution.java:22)
+21.00000
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 2.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
-	at Solution.main(Solution.java:22)
+2.00000
 ----------------------------------------
 

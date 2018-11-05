@@ -19,7 +19,7 @@ public class Solution {
         Edge e = null;
         int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
-        EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices, edges);
+        EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
         while (vertices > 0) {
             String[] tokens = scan.nextLine().split(" ");
             int a = Integer.parseInt(tokens[0]);

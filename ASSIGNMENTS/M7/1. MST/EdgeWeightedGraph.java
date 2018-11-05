@@ -4,18 +4,17 @@ public class EdgeWeightedGraph {
     private Bag<Edge>[] adj;
 
     /**
-     * Initializes a random edge-weighted graph.
-     *
-     * @param  ver the number of vertices
-     * @param  e the number of edges
+     * Initializes an empty edge-weighted graph with {@code V}
+     * vertices and 0 edges.
+     * @param  V the number of vertices
+     * @throws IllegalArgumentException if {@code V < 0}
      */
-    public EdgeWeightedGraph(final int ver, final int e) {
-        for (int i = 0; i < e; i++) {
-            int v = StdRandom.uniform(ver);
-            int w = StdRandom.uniform(ver);
-            double weight = Math.round(100 * StdRandom.uniform()) / 100.0;
-            Edge ed = new Edge(v, w, weight);
-            addEdge(ed);
+    public EdgeWeightedGraph(final int v) {
+        this.vertices = v;
+        this.edges = 0;
+        adj = (Bag<Edge>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
+            adj[i] = new Bag<Edge>();
         }
     }
     /**
