@@ -19,14 +19,13 @@ public class Solution {
         int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
-        while (vertices >= 0) {
+        while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
             int a = Integer.parseInt(tokens[0]);
             int b = Integer.parseInt(tokens[1]);
             double weight = Double.parseDouble(tokens[2]);
             Edge e = new Edge(a, b, weight);
             ewg.addEdge(e);
-            vertices--;
         }
         LazyPrimMST l = new LazyPrimMST(ewg);
         System.out.printf("%.5f\n", l.weight());
