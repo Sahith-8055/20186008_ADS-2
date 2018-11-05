@@ -28,6 +28,6 @@ public class Solution {
             ewg.addEdge(e);
         }
         LazyPrimMST l = new LazyPrimMST(ewg);
-        System.out.printf("%.5f\n", l.weight());
+        StdOut.printf("%.5f\n", l.weight());
     }
 }
