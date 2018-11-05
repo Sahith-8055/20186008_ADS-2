@@ -31,32 +31,9 @@ Audit done.
 Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:11:17: Parameter G should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:11:35: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:15: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:22:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:22:23: Parameter G should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:22:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:22:44: Parameter s should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:24: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:28: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:28: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:36: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:37:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:37:23: Parameter G should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:37:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:37:44: Parameter v should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:56: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:57: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:32: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Solution.java:5: Class Solution should be declared as final. [FinalClass]
