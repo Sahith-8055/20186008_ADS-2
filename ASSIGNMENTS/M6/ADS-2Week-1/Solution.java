@@ -59,12 +59,13 @@ class PageRank {
         int outdegree = 0;
         double[] pageranking = null;
         double[] pageranker = null;
-        for (int k = 1; k <= 1000; k++) {
+        final int z = 1000;
+        for (int a = 1; a <= z; a++) {
             pageranking = new double[digraph.V()];
             for (int i = 0; i < digraph.V(); i++) {
                 double pagerank = 0.0;
                 pageranker = new double[digraph.V()];
-                pageranker = newArray[k - 1];
+                pageranker = newArray[a - 1];
                 for (int j : digraph.reverse().adj(i)) {
                     vertex = j;
                     outdegree = digraph.outdegree(vertex);
@@ -72,7 +73,7 @@ class PageRank {
                 }
                 pageranking[i] = pagerank;
             }
-            newArray[k] = pageranking;
+            newArray[a] = pageranking;
         }
     }
     /**
