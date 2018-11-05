@@ -1,14 +1,35 @@
-import java.util.ArrayList;
+/**
+ * Class for page rank.
+ */
 class PageRank {
+    /**
+     * {Digraph object}.
+     */
     private Digraph digraph;
+    /**
+     * {doubleArray}.
+     */
     private double[] doubleArray;
+    /**
+     * {newArray}.
+     */
     private double[][] newArray;
+    /**
+     * {Variable of type integer}.
+     */
     private int k;
+
+    /**
+     * Constructs the object.
+     *
+     * @param      d     {Digraph}
+     */
     PageRank(final Digraph d) {
         this.digraph = d;
         this.k = 0;
+        final int x = 1001;
         this.doubleArray = new double[digraph.V()];
-        this.newArray = new double[1001][digraph.V()];
+        this.newArray = new double[x][digraph.V()];
         for (int i = 0; i < digraph.V(); i++) {
             doubleArray[i] = (1.0 / digraph.V());
         }
@@ -16,6 +37,9 @@ class PageRank {
         checkCorner();
         computeRank();
     }
+    /**
+     * {Method to check the corner cases}.
+     */
     public void checkCorner() {
         for (int i = 0; i < digraph.V(); i++) {
             if (digraph.outdegree(i) == 0) {
@@ -27,6 +51,9 @@ class PageRank {
             }
         }
     }
+    /**
+     * Calculates the rank.
+     */
     public void computeRank() {
         int vertex = 0;
         int outdegree = 0;
@@ -48,10 +75,22 @@ class PageRank {
             newArray[k] = pageranking;
         }
     }
+    /**
+     * Gets the pr.
+     *
+     * @param      v     {Vertex}
+     *
+     * @return     The pr.
+     */
     public double getPR(final int v) {
         doubleArray = newArray[1000];
         return doubleArray[v];
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String str = "";
         for (int i = 0; i < digraph.V(); i++) {
@@ -61,11 +100,22 @@ class PageRank {
     }
 }
 
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Unused Constructor.
     }
-    public static void main(String[] args) {
+    /**
+     * {Client Program}.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         int vertices = StdIn.readInt();
         Digraph dg = new Digraph(vertices);
         // read the first line of the input to get the number of vertices
@@ -98,6 +148,5 @@ public class Solution {
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search
         // print the return value of iAmFeelingLucky
-
     }
 }
