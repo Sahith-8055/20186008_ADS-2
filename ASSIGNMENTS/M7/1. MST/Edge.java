@@ -22,7 +22,7 @@ public class Edge implements Comparable<Edge> {
      *
      * @param  v1 one vertex
      * @param  w1 the other vertex
-     * @param  weight the weight of this edge
+     * @param  weight1 the weight of this edge
      */
     Edge(final int v1,
         final int w1, final double weight1) {

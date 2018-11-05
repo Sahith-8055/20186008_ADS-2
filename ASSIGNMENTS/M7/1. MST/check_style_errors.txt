@@ -1,16 +1,8 @@
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:25:8: Unused @param tag for 'weight'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:28:36: Expected @param tag for 'weight1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Starting audit...
+Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
