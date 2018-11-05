@@ -24,7 +24,7 @@ public class Solution {
             String[] tokens = scan.nextLine().split(" ");
             int a = Integer.parseInt(tokens[0]);
             int b = Integer.parseInt(tokens[1]);
-            int weight = Integer.parseInt(tokens[2]);
+            double weight = Double.parseDouble(tokens[2]);
             e = new Edge(a, b, weight);
             ewg.addEdge(e);
             vertices--;

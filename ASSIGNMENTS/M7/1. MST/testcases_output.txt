@@ -11,11 +11,7 @@ Expected Output:
 1.81000
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0.35"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:27)
+1.15000
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -23,11 +19,7 @@ Expected Output:
 10.46351
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0.11712"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:27)
+5.16509
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
