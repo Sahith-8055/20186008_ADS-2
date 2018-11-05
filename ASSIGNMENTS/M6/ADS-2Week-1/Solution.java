@@ -8,7 +8,7 @@ class PageRank {
         this.digraph = d;
         this.k = 0;
         this.doubleArray = new double[digraph.V()];
-        this.newArray = new double[1002][digraph.V()];
+        this.newArray = new double[1001][digraph.V()];
         for (int i = 0; i < digraph.V(); i++) {
             doubleArray[i] = (1.0 / digraph.V());
         }
@@ -61,36 +61,6 @@ class PageRank {
     }
 }
 
-class WebSearch {
-    private PageRank pr;
-    private String filename;
-    private LinearProbingHashST<String, ArrayList<Integer>> hash;
-    //private ArrayList<Integer> list;
-    private int count;
-    WebSearch(final PageRank p, final String name) {
-        this.hash = new LinearProbingHashST<String, ArrayList<Integer>>();
-        //this.list = new ArrayList<Integer>();
-        In in = new In(name);
-        while (!in.isEmpty()) {
-            this.count++;
-            String[] tokens = in.readLine().split(":");
-            int id = Integer.parseInt(tokens[0]);
-            for (int i = 0; i < tokens[1].length(); i++) {
-                ArrayList<Integer> list1;
-                if (hash.contains(tokens[i])) {
-                    list1 = hash.get(tokens[i]);
-                    list1.add(id);
-                } else {
-                    list1 = new ArrayList<Integer>();
-                    list1.add(id);
-                }
-                hash.put(tokens[i], list1);
-            }
-        }
-    }
-}
-
-
 public class Solution {
     private Solution() {
         //Unused Constructor.
@@ -118,7 +88,6 @@ public class Solution {
         // print the page rank object
 
         // This part is only for the final test case
-
         // File path to the web content
         String file = "WebContent.txt";
 
