@@ -11,7 +11,7 @@ Expected Output:
 1.81000
 
 Your Output: 
-1.15000
+1.41000
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -30,19 +30,21 @@ Your Output:
 42.00000
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 19.00000
 
 Your Output: 
-21.00000
+19.00000
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 2.00000
 
 Your Output: 
-2.00000
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 
