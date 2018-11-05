@@ -1,0 +1,66 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+614708.00000
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
+	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
+	at Solution.main(Solution.java:22)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+1.81000
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
+	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
+	at Solution.main(Solution.java:22)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+10.46351
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
+	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
+	at Solution.main(Solution.java:22)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+37.00000
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
+	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
+	at Solution.main(Solution.java:22)
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+19.00000
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
+	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
+	at Solution.main(Solution.java:22)
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+2.00000
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at EdgeWeightedGraph.addEdge(EdgeWeightedGraph.java:47)
+	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:18)
+	at Solution.main(Solution.java:22)
+----------------------------------------
+
