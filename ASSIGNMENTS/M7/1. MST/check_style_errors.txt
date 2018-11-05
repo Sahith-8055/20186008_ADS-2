@@ -1,41 +1,16 @@
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:77: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:79: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:100:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:100:29: Parameter first should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:100:40: 'first' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:118: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Bag.java:124: 'if' construct must use '{}'s. [NeedBraces]
-Audit done.
-Checkstyle ends with 8 errors.
-Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:27:20: 'v' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:28:19: 'w' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:28:35: 'weight' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:63:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:66:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:25:8: Unused @param tag for 'weight'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Edge.java:28:36: Expected @param tag for 'weight1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:9:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:12:40: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:25:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\EdgeWeightedGraph.java:34:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\LazyPrimMST.java:32: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M7\1. MST\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.

@@ -1,13 +1,25 @@
+/**
+ * Class for edge weighted graph.
+ */
 public class EdgeWeightedGraph {
+    /**
+     * {Vertices}.
+     */
     private int vertices;
+    /**
+     * {Edges}.
+     */
     private int edges;
+    /**
+     * {Bag array of type Edge}.
+     */
     private Bag<Edge>[] adj;
 
     /**
-     * Initializes an empty edge-weighted graph with {@code V}
+     * Initializes an empty edge-weighted graph with {@code v}
      * vertices and 0 edges.
-     * @param  V the number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
+     * @param  v the number of vertices
+     * @throws IllegalArgumentException if {@code v < 0}
      */
     public EdgeWeightedGraph(final int v) {
         this.vertices = v;
@@ -22,7 +34,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int V() {
+    public int vertices() {
         return this.vertices;
     }
 
@@ -31,7 +43,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of edges in this edge-weighted graph
      */
-    public int E() {
+    public int edge() {
         return this.edges;
     }
 

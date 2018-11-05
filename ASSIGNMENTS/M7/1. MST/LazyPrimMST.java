@@ -28,11 +28,12 @@ public class LazyPrimMST {
     LazyPrimMST(final EdgeWeightedGraph g) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
-        marked = new boolean[g.V()];
-        for (int v = 0; v < g.V(); v++)
+        marked = new boolean[g.vertices()];
+        for (int v = 0; v < g.vertices(); v++) {
             if (!marked[v]) {
                 prim(g, v);
             }
+        }
     }
 
     /**
