@@ -25,10 +25,7 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:99: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:29: Parameter first should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:40: 'first' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:133:12: Unused @param tag for 'first'. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:39: Expected @param tag for 'first1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.

@@ -1,5 +1,4 @@
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 /**
  * List of Stack.
@@ -85,7 +84,8 @@ public class Stack<Item> implements Iterable<Item> {
 
 
     /**
-     * Returns (but does not remove) the item most recently added to this stack.
+     * Returns (but does not remove) the item most recently
+     * added to this stack.
      *
      * @return the item most recently added to this stack
      */
@@ -96,7 +96,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Returns a string representation of this stack.
      *
-     * @return the sequence of items in this stack in LIFO order, separated by spaces
+     * @return the sequence of items in this stack in LIFO order.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -132,8 +132,8 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @param      first  The first
          */
-        public ListIterator(Node<Item> first) {
-            current = first;
+        ListIterator(final Node<Item> first1) {
+            current = first1;
         }
         /**
          * Determines if it has next.
