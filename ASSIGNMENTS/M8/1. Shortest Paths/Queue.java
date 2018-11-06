@@ -1,6 +1,4 @@
 import java.util.Iterator;
-import java.util.NoSuchElementException;
-
 /**
  * List of Queue.
  *
@@ -145,7 +143,7 @@ public class Queue<Item> implements Iterable<Item> {
          *
          * @param      first1  The first
          */
-        public ListIterator(final Node<Item> first1) {
+        ListIterator(final Node<Item> first1) {
             current = first1;
         }
 
