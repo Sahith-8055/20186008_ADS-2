@@ -1,21 +1,28 @@
+/**
+ * Class for dijkstra undirected sp.
+ */
 public class DijkstraUndirectedSP {
-    private double[] distTo;          // distTo[v] = distance  of shortest s->v path
-    private Edge[] edgeTo;            // edgeTo[v] = last edge on shortest s->v path
-    private IndexMinPQ<Double> pq;    // priority queue of vertices
+    /**
+     * {distTo[v] = distance  of shortest s->v path}.
+     */
+    private double[] distTo;
+    /**
+     * {edgeTo[v] = last edge on shortest s->v path}.
+     */
+    private Edge[] edgeTo;
+    /**
+     * {priority queue of vertices}.
+     */
+    private IndexMinPQ<Double> pq;
 
     /**
-     * Computes a shortest-paths tree from the source vertex {@code s} to every
-     * other vertex in the edge-weighted graph {@code G}.
      *
      * @param  G the edge-weighted digraph
      * @param  s the source vertex
-     * @throws IllegalArgumentException if an edge weight is negative
-     * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
-    public DijkstraUndirectedSP(EdgeWeightedGraph G, int s) {
+    public DijkstraUndirectedSP(final EdgeWeightedGraph G, final int s) {
         distTo = new double[G.vertices()];
         edgeTo = new Edge[G.vertices()];
-
         for (int v = 0; v < G.vertices(); v++)
             distTo[v] = Double.POSITIVE_INFINITY;
         distTo[s] = 0.0;
@@ -28,8 +35,6 @@ public class DijkstraUndirectedSP {
             for (Edge e : G.adj(v))
                 relax(e, v);
         }
-
-        // check optimality conditions
     }
 
     // relax edge e and update pq if changed
@@ -38,47 +43,47 @@ public class DijkstraUndirectedSP {
         if (distTo[w] > distTo[v] + e.weight()) {
             distTo[w] = distTo[v] + e.weight();
             edgeTo[w] = e;
-            if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-            else                pq.insert(w, distTo[w]);
+            if (pq.contains(w)) {
+                pq.decreaseKey(w, distTo[w]);
+            } else {
+                pq.insert(w, distTo[w]);
+            }
         }
     }
 
     /**
-     * Returns the length of a shortest path between the source vertex {@code s} and
-     * vertex {@code v}.
      *
-     * @param  v the destination vertex
-     * @return the length of a shortest path between the source vertex {@code s} and
-     *         the vertex {@code v}; {@code Double.POSITIVE_INFINITY} if no such path
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param  v the destination vertex.
+     * @return the length of a shortest path between the source vertex
+     * and the vertex.
+     *
      */
-    public double distTo(int v) {
+    public double distTo(final int v) {
         return distTo[v];
     }
 
     /**
-     * Returns true if there is a path between the source vertex {@code s} and
-     * vertex {@code v}.
      *
      * @param  v the destination vertex
-     * @return {@code true} if there is a path between the source vertex
-     *         {@code s} to vertex {@code v}; {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @return {@code true} if there is a path between vertex
+     * {@code s} to vertex {@code v};
+     * {@code false} otherwise
      */
     public boolean hasPathTo(int v) {
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
 
     /**
-     * Returns a shortest path between the source vertex {@code s} and vertex {@code v}.
      *
-     * @param  v the destination vertex
-     * @return a shortest path between the source vertex {@code s} and vertex {@code v};
-     *         {@code null} if no such path
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param  v the destination vertex.
+     * @return a shortest path between the source vertex
+     * {@code s} and vertex {@code v};
+     * {@code null} if no such path
      */
     public Iterable<Edge> pathTo(int v) {
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+            return null;
+        }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
