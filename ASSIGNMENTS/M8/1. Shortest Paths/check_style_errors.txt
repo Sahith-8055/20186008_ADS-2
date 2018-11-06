@@ -1,11 +1,5 @@
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:99:9: Redundant 'public' modifier. [RedundantModifier]
-Audit done.
-Checkstyle ends with 3 errors.
-Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
@@ -13,14 +7,10 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
