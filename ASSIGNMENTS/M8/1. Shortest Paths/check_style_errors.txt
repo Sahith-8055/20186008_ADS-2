@@ -117,27 +117,10 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:9: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:10:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:11:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:45:22: Parameter item should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:60: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:75: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:82: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:95: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:97: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:104: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:105:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:107:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:107:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:107:29: Parameter first should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:107:40: 'first' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:111:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:115:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:119:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:120: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:99: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:29: Parameter first should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:40: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 6 errors.
