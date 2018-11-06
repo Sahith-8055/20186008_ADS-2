@@ -17,28 +17,35 @@ public class DijkstraUndirectedSP {
 
     /**
      *
-     * @param  G the edge-weighted digraph
+     * @param  g the edge-weighted digraph
      * @param  s the source vertex
      */
-    public DijkstraUndirectedSP(final EdgeWeightedGraph G, final int s) {
-        distTo = new double[G.vertices()];
-        edgeTo = new Edge[G.vertices()];
-        for (int v = 0; v < G.vertices(); v++)
+    public DijkstraUndirectedSP(final EdgeWeightedGraph g, final int s) {
+        this.distTo = new double[g.vertices()];
+        this.edgeTo = new Edge[g.vertices()];
+        for (int v = 0; v < g.vertices(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
         distTo[s] = 0.0;
 
         // relax vertices in order of distance from s
-        pq = new IndexMinPQ<Double>(G.vertices());
+        pq = new IndexMinPQ<Double>(g.vertices());
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
             int v = pq.delMin();
-            for (Edge e : G.adj(v))
+            for (Edge e : g.adj(v)) {
                 relax(e, v);
+            }
         }
     }
 
-    // relax edge e and update pq if changed
-    private void relax(Edge e, int v) {
+    /**
+     * {relax edge e and update pq if changed}
+     *
+     * @param      e     {Edge object}
+     * @param      v     {Source vertex}
+     */
+    private void relax(final Edge e, final int v) {
         int w = e.other(v);
         if (distTo[w] > distTo[v] + e.weight()) {
             distTo[w] = distTo[v] + e.weight();
@@ -69,7 +76,7 @@ public class DijkstraUndirectedSP {
      * {@code s} to vertex {@code v};
      * {@code false} otherwise
      */
-    public boolean hasPathTo(int v) {
+    public boolean hasPathTo(final int v) {
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
 
@@ -80,7 +87,7 @@ public class DijkstraUndirectedSP {
      * {@code s} and vertex {@code v};
      * {@code null} if no such path
      */
-    public Iterable<Edge> pathTo(int v) {
+    public Iterable<Edge> pathTo(final int v) {
         if (!hasPathTo(v)) {
             return null;
         }
