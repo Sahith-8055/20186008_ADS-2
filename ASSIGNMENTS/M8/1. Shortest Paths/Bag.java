@@ -1,6 +1,5 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
 /**
  * Class for bag.
  *
@@ -95,10 +94,10 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      first1  The first
          */
-        public ListIterator(final Node<Item> first) {
-            current = first;
+        public ListIterator(final Node<Item> first1) {
+            current = first1;
         }
 
         /**
@@ -122,9 +121,6 @@ public class Bag<Item> implements Iterable<Item> {
          * @return     {Item}
          */
         public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
             Item item = current.item;
             current = current.next;
             return item;

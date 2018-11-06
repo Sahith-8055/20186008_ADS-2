@@ -40,7 +40,7 @@ public class DijkstraUndirectedSP {
     }
 
     /**
-     * {relax edge e and update pq if changed}
+     * {relax edge e and update pq if changed}.
      *
      * @param      e     {Edge object}
      * @param      v     {Source vertex}

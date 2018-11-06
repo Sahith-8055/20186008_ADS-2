@@ -1,14 +1,13 @@
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:100:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:100:46: 'first' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Bag.java:99:9: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\DijkstraUndirectedSP.java:42: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -16,16 +15,13 @@ Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Queue.java:148:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Queue.java:148:46: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:133:12: Unused @param tag for 'first'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M8\1. Shortest Paths\Stack.java:135:39: Expected @param tag for 'first1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
