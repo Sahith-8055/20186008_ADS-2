@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.HashMap;
+//import java.util.HashMap;
 /**
  * Class for solution.
  */
@@ -22,7 +22,8 @@ public final class Solution {
         int m = Integer.parseInt(tokens[1]);
         String[] stations = scan.nextLine().split(" ");
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(n);
-        HashMap<String, Integer> hash = new HashMap<String, Integer>();
+        LinearProbingHashST<String, Integer> hash;
+        hash = new LinearProbingHashST<String, Integer>();
         for (int i = 0; i < stations.length; i++) {
             hash.put(stations[i], i);
         }
