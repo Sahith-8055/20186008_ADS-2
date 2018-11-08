@@ -28,7 +28,7 @@ public class SeamCarver {
         if(x == 0 || x == this.pic.width() - 1 || y == 0 || y == this.pic.height() - 1) {
             return BORDER_VALUE;
         }
-        return gradX(x, y) + gradY(x, y);
+        return Math.sqrt(gradX(x, y) + gradY(x, y));
     }
     private double gradX(int x, int y) {
         Color left = this.pic.get(x - 1, y);
