@@ -17,14 +17,12 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:2: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:57: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:58: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:61: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:9:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:78: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:108: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
