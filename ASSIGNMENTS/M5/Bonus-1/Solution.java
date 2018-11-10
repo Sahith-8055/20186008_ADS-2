@@ -32,7 +32,7 @@ public class Solution {
             components[connected.id(j)].enqueue(j);
         }
         int count = 0;
-        for (int k = 0; k < m; k++) {
+        for (int k = 0; k <= m; k++) {
             if (count <= components[k].size()) {
                 count = components[k].size();
             }
