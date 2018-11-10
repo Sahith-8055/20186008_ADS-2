@@ -19,7 +19,6 @@ Expected Output:
 7
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
-	at Solution.main(Solution.java:36)
+6
 ----------------------------------------
 
