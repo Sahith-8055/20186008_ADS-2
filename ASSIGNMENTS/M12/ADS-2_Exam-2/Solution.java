@@ -51,7 +51,7 @@ public class Solution {
             int destination = Integer.parseInt(tokens2[2]);
             dusp = new DijkstraUndirectedSP(ewg, source);
             DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
-            if (!dusp.hasPathTo(viaPath) && !dusp.hasPathTo(destination)) {
+            if (!dusp.hasPathTo(viaPath) && !dusp1.hasPathTo(destination)) {
                 System.out.println("No Path Found.");
             }
             // Handle the case of ViaPaths, where three integers are given.
