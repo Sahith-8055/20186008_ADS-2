@@ -53,6 +53,8 @@ public class Solution {
             DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
             if (!dusp.hasPathTo(viaPath) || !dusp1.hasPathTo(destination)) {
                 System.out.println("No Path Found.");
+            } else {
+                System.out.println(dusp.distTo(viaPath) + dusp1.distTo(destination));
             }
             // Handle the case of ViaPaths, where three integers are given.
             // First is the source and second is the via is the one where path should pass throuh.
