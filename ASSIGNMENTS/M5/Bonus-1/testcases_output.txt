@@ -1,9 +1,11 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 0
 
 Your Output: 
-0
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +13,9 @@ Expected Output:
 3
 
 Your Output: 
-0
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
