@@ -28,10 +28,19 @@ public class Solution {
             break;
 
         case "DirectedPaths":
+            String[] tokens1 = scan.nextLine().split(" ");
+            int a = Integer.parseInt(tokens1[0]);
+            int b = Integer.parseInt(tokens1[1]);
+            DijkstraUndirectedSP dusp = new DijkstraUndirectedSP(ewg, a);
             // Handle the case of DirectedPaths, where two integers are given.
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
+            if (!dusp.hasPathTo(b)) {
+                System.out.println("No Path Found.");
+            } else {
+                System.out.println(dusp.distTo(b));
+            }
             break;
 
         case "ViaPaths":
