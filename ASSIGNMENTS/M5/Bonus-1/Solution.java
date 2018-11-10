@@ -19,7 +19,7 @@ public class Solution {
             String[] connections = scan.nextLine().split(" ");
             int a = Integer.parseInt(connections[0]);
             int b = Integer.parseInt(connections[1]);
-            g.addEdge(a - 1, b - 1);
+            g.addEdge(a, b);
             edges--;
         }
         CC connected = new CC(g);
