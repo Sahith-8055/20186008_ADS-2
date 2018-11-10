@@ -17,7 +17,7 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:57: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:60: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:61: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...

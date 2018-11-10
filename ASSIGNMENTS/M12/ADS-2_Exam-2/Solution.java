@@ -55,6 +55,7 @@ public class Solution {
                 System.out.println("No Path Found.");
             } else {
                 System.out.println(dusp.distTo(viaPath) + dusp1.distTo(destination));
+                System.out.println(ewg.adj(viaPath));
             }
             // Handle the case of ViaPaths, where three integers are given.
             // First is the source and second is the via is the one where path should pass throuh.
