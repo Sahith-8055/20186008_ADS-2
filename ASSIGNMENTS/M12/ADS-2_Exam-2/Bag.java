@@ -82,7 +82,7 @@ public class Bag<Item> implements Iterable<Item> {
     public String toString() {
         String str = "";
         for (int i = 0; i < size(); i++) {
-            str += i;
+            str += i + " ";
         }
         return str;
     }
