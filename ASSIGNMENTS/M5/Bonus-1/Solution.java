@@ -14,7 +14,7 @@ public class Solution {
         String[] tokens = scan.nextLine().split(" ");
         int vertices = Integer.parseInt(tokens[0]);
         int edges = Integer.parseInt(tokens[1]);
-        Graph g = new Graph(vertices);
+        Graph g = new Graph(vertices + 1);
         while (edges > 0) {
             String[] connections = scan.nextLine().split(" ");
             int a = Integer.parseInt(connections[0]);
