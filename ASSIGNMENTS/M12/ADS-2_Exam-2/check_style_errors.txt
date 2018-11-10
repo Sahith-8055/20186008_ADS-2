@@ -6,9 +6,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\EdgeWeightedGraph.java:109: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\EdgeWeightedGraph.java:114: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -17,7 +16,7 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:48: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:58: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
 Checkstyle ends with 6 errors.
 Starting audit...

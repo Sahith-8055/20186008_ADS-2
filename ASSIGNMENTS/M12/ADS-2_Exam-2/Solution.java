@@ -8,6 +8,7 @@ public class Solution {
         int cities = Integer.parseInt(scan.nextLine());
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(cities);
         int roadLines = Integer.parseInt(scan.nextLine());
+        DijkstraUndirectedSP dusp;
         while (roadLines > 0) {
             String[] tokens = scan.nextLine().split(" ");
             int cityA = Integer.parseInt(tokens[0]);
@@ -31,7 +32,7 @@ public class Solution {
             String[] tokens1 = scan.nextLine().split(" ");
             int a = Integer.parseInt(tokens1[0]);
             int b = Integer.parseInt(tokens1[1]);
-            DijkstraUndirectedSP dusp = new DijkstraUndirectedSP(ewg, a);
+            dusp = new DijkstraUndirectedSP(ewg, a);
             // Handle the case of DirectedPaths, where two integers are given.
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
@@ -44,13 +45,21 @@ public class Solution {
             break;
 
         case "ViaPaths":
+            String[] tokens2 = scan.nextLine().split(" ");
+            int source = Integer.parseInt(tokens2[0]);
+            int viaPath = Integer.parseInt(tokens2[1]);
+            int destination = Integer.parseInt(tokens2[2]);
+            dusp = new DijkstraUndirectedSP(ewg, source);
+            DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
+            if (!dusp.hasPathTo(viaPath) && !dusp.hasPathTo(destination)) {
+                System.out.println("No Path Found.");
+            }
             // Handle the case of ViaPaths, where three integers are given.
             // First is the source and second is the via is the one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
             break;
-
         default:
             break;
         }
