@@ -79,13 +79,6 @@ public class Bag<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
-    public String toString() {
-        String str = "";
-        for (int i = 0; i < size(); i++) {
-            str += i + " ";
-        }
-        return str;
-    }
     /**
      * Class for list iterator.
      *
