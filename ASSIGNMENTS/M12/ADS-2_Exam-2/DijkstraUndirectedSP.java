@@ -87,14 +87,14 @@ public class DijkstraUndirectedSP {
      * and vertex {@code v};
      * {@code null} if no such path
      */
-    public Iterable<Edge> pathTo(final int v) {
+    public Iterable<Integer> pathTo(final int v) {
         if (!hasPathTo(v)) {
             return null;
         }
-        Stack<Edge> path = new Stack<Edge>();
+        Stack<Integer> path = new Stack<Integer>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
-            path.push(e);
+            path.push(e.other(x));
             x = e.other(x);
         }
         return path;

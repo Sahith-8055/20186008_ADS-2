@@ -60,57 +60,20 @@ public final class Solution {
             int viaPath = Integer.parseInt(tokens3[1]);
             int destination = Integer.parseInt(tokens3[2]);
             dusp = new DijkstraUndirectedSP(ewg, source);
-            if (dusp.hasPathTo(destination)) {
-                Queue<Integer> queue = new Queue<Integer>();
-                for (Edge each : dusp.pathTo(viaPath)) {
-                    String[] cities1 = each.toString().split(" ");
-                    String[] array = cities1[0].split("-");
-                    int count = 0;
-                    int flag = 0;
-                    for (int eachInt: queue) {
-                        if (Integer.parseInt(array[1]) == eachInt) {
-                            count++;
-                        }
-                        if (Integer.parseInt(array[1]) == eachInt) {
-                            flag++;
-                        }
-                    }
-                    if (flag == 0) {
-                        queue.enqueue(Integer.parseInt(array[1]));
-                    }
-                    if (count == 0) {
-                        queue.enqueue(Integer.parseInt(array[0]));
-                    }
-                }
-                DijkstraUndirectedSP dusp1;
-                dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
-                for (Edge eachEdge : dusp1.pathTo(destination)) {
-                    String[] cities2 = eachEdge.toString().split(" ");
-                    String[] array1 = cities2[0].split("-");
-                    int count1 = 0;
-                    int flag1 = 0;
-                    for (Integer eachInt1 : queue) {
-                        if (Integer.parseInt(array1[0]) == eachInt1) {
-                            count1++;
-                        }
-                        if (Integer.parseInt(array1[1]) == eachInt1) {
-                            flag1++;
-                        }
-                    }
-                    if (count1 == 0) {
-                        queue.enqueue(Integer.parseInt(array1[0]));
-                    }
-                    if (flag1 == 0) {
-                        queue.enqueue(Integer.parseInt(array1[1]));
-                    }
-                }
-                System.out.println(
-                    dusp.distTo(viaPath) + dusp1.distTo(destination));
-                while (!queue.isEmpty()) {
-                    System.out.print(queue.dequeue() + " ");
-                }
-            } else {
+            DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
+            if (!(dusp.hasPathTo(viaPath) && dusp1.hasPathTo(destination))) {
                 System.out.println("No Path Found.");
+            } else {
+                String str = "";
+                for (int p : dusp.pathTo(viaPath)) {
+                    str += p + " ";
+                }
+                for (int q : dusp1.pathTo(destination)) {
+                    str += q + " ";
+                }
+                str += destination;
+                System.out.println(dusp.distTo(viaPath) + dusp1.distTo(destination));
+                System.out.println(str);
             }
             // Handle the case of ViaPaths, where three integers are given.
             // First is the source and second is the via
