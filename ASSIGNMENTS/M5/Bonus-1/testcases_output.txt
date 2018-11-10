@@ -1,0 +1,26 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+0
+
+Your Output: 
+0
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+3
+
+Your Output: 
+0
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+7
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at Graph.addEdge(Graph.java:50)
+	at Solution.main(Solution.java:22)
+----------------------------------------
+
