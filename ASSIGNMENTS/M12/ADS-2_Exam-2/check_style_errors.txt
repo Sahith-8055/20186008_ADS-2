@@ -1,0 +1,18 @@
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\EdgeWeightedGraph.java:109: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\EdgeWeightedGraph.java:114: Line is longer than 80 characters (found 84). [LineLength]
+Audit done.
+Checkstyle ends with 2 errors.
+Starting audit...
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:2: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:39: Line is longer than 80 characters (found 98). [LineLength]
+Audit done.
+Checkstyle ends with 6 errors.
