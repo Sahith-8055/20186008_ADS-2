@@ -3,10 +3,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\DijkstraUndirectedSP.java:83: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\DijkstraUndirectedSP.java:85: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -18,8 +15,9 @@ Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:5: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:85: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M12\ADS-2_Exam-2\Solution.java:115: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.

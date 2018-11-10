@@ -60,8 +60,7 @@ public class Solution {
             int viaPath = Integer.parseInt(tokens3[1]);
             int destination = Integer.parseInt(tokens3[2]);
             dusp = new DijkstraUndirectedSP(ewg, source);
-            DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
-            if (dusp1.hasPathTo(destination) || dusp.hasPathTo(viaPath)) {
+            if (dusp.hasPathTo(destination)) {
                 Queue<Integer> queue = new Queue<Integer>();
                 for (Edge each : dusp.pathTo(viaPath)) {
                     String[] cities1 = each.toString().split(" ");
@@ -83,6 +82,7 @@ public class Solution {
                         queue.enqueue(Integer.parseInt(array[0]));
                     }
                 }
+                DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
                 for (Edge eachEdge : dusp1.pathTo(destination)) {
                     String[] cities2 = eachEdge.toString().split(" ");
                     String[] array1 = cities2[0].split("-");
