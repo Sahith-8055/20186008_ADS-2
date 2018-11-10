@@ -33,7 +33,7 @@ public class Solution {
         }
         int count = 0;
         for (int k = 0; k < g.V(); k++) {
-            if (count <= components[k].size()) {
+            if (count < components[k].size()) {
                 count = components[k].size();
             }
         }
