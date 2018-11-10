@@ -1,11 +1,9 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 0
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:19)
+0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -13,9 +11,7 @@ Expected Output:
 3
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:19)
+0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -23,8 +19,7 @@ Expected Output:
 7
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
-	at Graph.addEdge(Graph.java:50)
-	at Solution.main(Solution.java:22)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
+	at Solution.main(Solution.java:36)
 ----------------------------------------
 
