@@ -37,6 +37,6 @@ public class Solution {
                 count = components[k].size();
             }
         }
-        System.out.println(count - 1);
+        System.out.println(count);
     }
 }
