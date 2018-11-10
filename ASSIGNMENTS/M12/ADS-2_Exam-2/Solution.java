@@ -3,9 +3,17 @@ import java.util.Scanner;
  * Class for solution.
  */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Unused Constructor.
     }
+    /**
+     * {Client Program}.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int cities = Integer.parseInt(scan.nextLine());
@@ -23,7 +31,6 @@ public class Solution {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
-
         String caseToGo = scan.nextLine();
         switch (caseToGo) {
         case "Graph":
@@ -53,7 +60,8 @@ public class Solution {
             int viaPath = Integer.parseInt(tokens3[1]);
             int destination = Integer.parseInt(tokens3[2]);
             dusp = new DijkstraUndirectedSP(ewg, source);
-            if (dusp.hasPathTo(destination)) {
+            DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
+            if (dusp1.hasPathTo(destination) || dusp.hasPathTo(viaPath)) {
                 Queue<Integer> queue = new Queue<Integer>();
                 for (Edge each : dusp.pathTo(viaPath)) {
                     String[] cities1 = each.toString().split(" ");
@@ -75,7 +83,6 @@ public class Solution {
                         queue.enqueue(Integer.parseInt(array[0]));
                     }
                 }
-                DijkstraUndirectedSP dusp1 = new DijkstraUndirectedSP(ewg, viaPath);
                 for (Edge eachEdge : dusp1.pathTo(destination)) {
                     String[] cities2 = eachEdge.toString().split(" ");
                     String[] array1 = cities2[0].split("-");
