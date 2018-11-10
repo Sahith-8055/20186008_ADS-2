@@ -23,20 +23,25 @@ public class Solution {
             edges--;
         }
         CC connected = new CC(g);
-        int m = connected.count();
-        Queue<Integer>[] components = (Queue<Integer>[])new Queue[m];
-        for (int i = 0; i < m; i++) {
-            components[i] = new Queue<Integer>();
-        }
-        for (int j = 0; j < g.V(); j++) {
-            components[connected.id(j)].enqueue(j);
-        }
-        int count = 0;
-        for (int k = 0; k <= m; k++) {
-            if (count <= components[k].size()) {
-                count = components[k].size();
+        int count1 = 0;
+        int count2 = 0;
+        int count3 = 0;
+        int[] array = connected.idArray();
+        for (int i = 0; i < g.V(); i++) {
+            if (g.hasParallelEdges(i)) {
+                count1++;
+            }
+            int count4 = 0;
+            count3 = array[i];
+            for (int j = 0; j < array.length; j++) {
+                if (count3 == array[j]) {
+                    count4++;
+                }
+            }
+            if (count2 < count4) {
+                count2 = count4;
             }
         }
-        System.out.println(count);
+        System.out.println(count1 + count2);
     }
 }

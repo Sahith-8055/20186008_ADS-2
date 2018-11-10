@@ -2,6 +2,7 @@ public class Graph {
     private final int V;
     private int E;
     private Bag<Integer>[] adj;
+    private boolean[] marked;
 
     /**
      * Initializes an empty graph with {@code V} vertices and 0 edges.
@@ -91,5 +92,31 @@ public class Graph {
             s.append("\n");
         }
         return s.toString();
+    }
+    public boolean hasEdge(int v, int w) {
+        for (int each : adj[v]) {
+            if (each == w) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean hasSelfLoop(int v) {
+        for (int a : adj[v]) {
+            if (a == v) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean hasParallelEdges(int v) {
+        marked = new boolean[V()];
+        for (int b : adj[v]) {
+            if (marked[b]) {
+                return true;
+            }
+            marked[b] = true;
+        }
+        return false;
     }
 }

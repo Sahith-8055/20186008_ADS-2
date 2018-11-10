@@ -57,8 +57,10 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\CC.java:109: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\CC.java:109:93: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\CC.java:109:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\CC.java:111:5: Class 'CC' looks like designed for extension (can be subclassed), but the method 'idArray' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CC' final or making the method 'idArray' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\CC.java:111:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:1: Missing a Javadoc comment. [JavadocType]
@@ -67,19 +69,30 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:3:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:3:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:12:11: Parameter V should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:12:15: 'V' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:12:15: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:26:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:35:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:45: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:47:25: Parameter v should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:47:32: Parameter w should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:61:34: Parameter v should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:72:23: Parameter v should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:80: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:13:11: Parameter V should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:13:15: 'V' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:13:15: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:27:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:36:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:46: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:48:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:48:32: Parameter w should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:62:34: Parameter v should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:73:23: Parameter v should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:81: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:96:5: Class 'Graph' looks like designed for extension (can be subclassed), but the method 'hasEdge' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graph' final or making the method 'hasEdge' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:96:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:96:28: Parameter v should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:96:35: Parameter w should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:104:5: Class 'Graph' looks like designed for extension (can be subclassed), but the method 'hasSelfLoop' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graph' final or making the method 'hasSelfLoop' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:104:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:104:32: Parameter v should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:112:5: Class 'Graph' looks like designed for extension (can be subclassed), but the method 'hasParallelEdges' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graph' final or making the method 'hasParallelEdges' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:112:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Graph.java:112:37: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Queue.java:31: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Queue.java:34: Line is longer than 80 characters (found 106). [LineLength]
@@ -115,6 +128,5 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M5\Bonus-1\Solution.java:27:57: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.
