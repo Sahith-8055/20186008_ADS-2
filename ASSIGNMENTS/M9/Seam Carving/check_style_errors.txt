@@ -37,15 +37,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:26:43: '255' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:27:43: '255' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:28:43: '255' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:111: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:149: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:152: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -21,11 +21,12 @@ public final class SCUtility {
      */
     public static Picture randomPicture(final int width, final int height) {
         Picture picture = new Picture(width, height);
+        final int x = 255;
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {
-                int r = StdRandom.uniform(255);
-                int g = StdRandom.uniform(255);
-                int b = StdRandom.uniform(255);
+                int r = StdRandom.uniform(x);
+                int g = StdRandom.uniform(x);
+                int b = StdRandom.uniform(x);
                 Color color = new Color(r, g, b);
                 picture.set(col, row, color);
             }
@@ -108,7 +109,7 @@ public final class SCUtility {
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {
                 float normalizedGrayValue;
-                normalizedGrayValue = (float) grayValues[col][row] / (float) maxVal;
+                normalizedGrayValue = (float) (grayValues[col][row] / maxVal);
                 if (normalizedGrayValue >= 1.0f) {
                     normalizedGrayValue = 1.0f;
                 }
@@ -146,11 +147,13 @@ public final class SCUtility {
         // if horizontal seam, then set one pixel in every column
         // if vertical, put one pixel in every row
         if (horizontal) {
-            for (int col = 0; col < width; col++)
+            for (int col = 0; col < width; col++) {
                 overlaid.set(col, seamIndices[col], Color.RED);
+            }
         } else {
-            for (int row = 0; row < height; row++)
+            for (int row = 0; row < height; row++) {
                 overlaid.set(seamIndices[row], row, Color.RED);
+            }
         }
         return overlaid;
     }
