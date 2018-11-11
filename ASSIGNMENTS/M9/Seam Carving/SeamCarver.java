@@ -255,16 +255,16 @@ public class SeamCarver {
             throw new java.lang.IllegalArgumentException(
                 "IllegalArgumentException");
         }
-        Picture pic = new Picture(width() - 1, height());
+        Picture picture2 = new Picture(width() - 1, height());
         for (int h = 0; h < height(); h++) {
             for (int w = 0; w < seam[h]; w++) {
-                pic.set(w, h, this.pic.get(w, h));
+                picture2.set(w, h, this.pic.get(w, h));
             }
             for (int w = seam[h] + 1; w < width(); w++) {
-                pic.set(w - 1, h, this.pic.get(w, h));
+                picture2.set(w - 1, h, this.pic.get(w, h));
             }
         }
-        this.pic = pic;
+        this.pic = picture2;
     }
 
     /**

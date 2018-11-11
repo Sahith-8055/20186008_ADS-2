@@ -14,7 +14,7 @@ public final class ResizeDemo {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        if (args.length != 3) {
+        if (args.length != 2 + 1) {
             StdOut.println(
                 "Usage:\njava ResizeDemo [image filename] [num cols to remove] [num rows to remove]");
             return;

@@ -25,9 +25,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 23 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:64: Line is longer than 80 characters (found 82). [LineLength]
@@ -35,10 +33,9 @@ Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:17:28: '3' is a magic number. [MagicNumber]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:19: Line is longer than 80 characters (found 102). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:26:43: '255' is a magic number. [MagicNumber]
@@ -50,19 +47,11 @@ Starting audit...
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SeamCarver.java:258:17: 'pic' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:20: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:53:32: Expression can be simplified. [SimplifyBooleanExpression]
