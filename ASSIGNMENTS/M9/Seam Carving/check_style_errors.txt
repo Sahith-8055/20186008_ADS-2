@@ -21,9 +21,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:53:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:54:40: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:134: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
