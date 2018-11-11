@@ -1,29 +1,12 @@
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:18:8: Unused import - javax.swing.JPanel. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:50:8: Unused @param tag for 'width'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:51:8: Unused @param tag for 'height'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:53:23: Expected @param tag for 'width1'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:53:41: Expected @param tag for 'height1'. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:65:13: Parameter picture should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:82:13: Parameter filename should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:82:20: 'filename' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:113:13: Parameter file should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:117: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:167: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:205:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:206: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:208: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:211:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:212: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:214: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:258: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:278: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:294: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:326: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:413: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:169: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:215:52: '+' should be on a new line. [OperatorWrap]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:228:55: '+' should be on a new line. [OperatorWrap]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:306: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:338: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...
