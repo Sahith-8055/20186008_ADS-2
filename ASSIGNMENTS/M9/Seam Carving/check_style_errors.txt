@@ -61,25 +61,12 @@ Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:1:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:3:44: Parameter sc should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:11:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:11:42: Parameter sc should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:18:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:20: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:7: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:22: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:52:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:53:40: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:105: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:113: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:131: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:53:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:54:40: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Solution.java:134: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 4 errors.
