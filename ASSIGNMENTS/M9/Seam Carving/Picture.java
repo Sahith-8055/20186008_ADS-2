@@ -19,7 +19,6 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 
-
 public final class Picture implements ActionListener {
     private BufferedImage image;               // the rasterized image
     private JFrame frame;                      // on-screen view

@@ -49,4 +49,5 @@ public class PrintSeams {
         printSeam(carver, horizontalSeam, HORIZONTAL);
 
     }
+
 }

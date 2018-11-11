@@ -1,6 +1,4 @@
 import java.util.Random;
-
-
 public final class StdRandom {
 
     private static Random random;    // pseudo-random number generator
