@@ -61,8 +61,7 @@ public final class PrintSeams {
         StdOut.println(
             "The table gives the dual-gradient energies of each pixel.");
         StdOut.println(
-            "The asterisks denote a minimum energy"
-            + "vertical or horizontal seam.");
+            "The asterisks denote a minimum energy vertical or horizontal seam.");
         StdOut.println();
 
         SeamCarver carver = new SeamCarver(picture);
