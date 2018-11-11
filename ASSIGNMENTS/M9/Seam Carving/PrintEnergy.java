@@ -1,8 +1,23 @@
-public class PrintEnergy {
+/**
+ * Class for print energy.
+ */
+public final class PrintEnergy {
+    /**
+     * Constructs the object.
+     */
+    private PrintEnergy() {
 
-    public static void main(String[] args) {
+    }
+    /**
+     * {Client Program}.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
-        StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
+        StdOut.printf(
+            "image is %d pixels wide by %d pixels high.\n"
+            , picture.width(), picture.height());
 
         SeamCarver sc = new SeamCarver(picture);
 

@@ -1,13 +1,25 @@
-
-
 import java.awt.Color;
 
+/**
+ * Class for sc utility.
+ */
+public final class SCUtility {
 
-public class SCUtility {
-
-
-    // create random width-by-height array of tiles
-    public static Picture randomPicture(int width, int height) {
+    /**
+     * Constructs the object.
+     */
+    private SCUtility() {
+        //Unused Constructor.
+    }
+    /**
+     * {Method to obtain a random picture}.
+     *
+     * @param      width   The width
+     * @param      height  The height
+     *
+     * @return     {Picture}
+     */
+    public static Picture randomPicture(final int width, final int height) {
         Picture picture = new Picture(width, height);
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {
@@ -22,7 +34,14 @@ public class SCUtility {
     }
 
 
-    public static double[][] toEnergyMatrix(SeamCarver sc) {
+    /**
+     * {Method to convert to energy matrix}.
+     *
+     * @param      sc    The seam carver object
+     *
+     * @return     {2-D Double array}
+     */
+    public static double[][] toEnergyMatrix(final SeamCarver sc) {
         double[][] returnDouble = new double[sc.width()][sc.height()];
         for (int col = 0; col < sc.width(); col++)
             for (int row = 0; row < sc.height(); row++)
@@ -31,19 +50,37 @@ public class SCUtility {
         return returnDouble;
     }
 
-    // displays grayvalues as energy (converts to picture, calls show)
-    public static void showEnergy(SeamCarver sc) {
+
+    /**
+     * Shows the energy.
+     *
+     * @param      sc    The seam carver object
+     */
+    public static void showEnergy(final SeamCarver sc) {
         doubleToPicture(toEnergyMatrix(sc)).show();
     }
 
-    public static Picture toEnergyPicture(SeamCarver sc) {
+    /**
+     * {Method to convert to energy picture}.
+     *
+     * @param      sc    The seam carver
+     *
+     * @return     {Picture}
+     */
+    public static Picture toEnergyPicture(final SeamCarver sc) {
         double[][] energyMatrix = toEnergyMatrix(sc);
         return doubleToPicture(energyMatrix);
     }
 
-    // converts a double matrix of values into a normalized picture
-    // values are normalized by the maximum grayscale value (ignoring border pixels)
-    public static Picture doubleToPicture(double[][] grayValues) {
+    /**
+     * {converts a double matrix of.
+     * values into a normalized picture}.
+     *
+     * @param      grayValues  The gray values
+     *
+     * @return     {Picture}
+     */
+    public static Picture doubleToPicture(final double[][] grayValues) {
 
         // each 1D array in the matrix represents a single column, so number
         // of 1D arrays is the width, and length of each array is the height
@@ -54,32 +91,44 @@ public class SCUtility {
 
         // maximum grayscale value (ignoring border pixels)
         double maxVal = 0;
-        for (int col = 1; col < width-1; col++) {
-            for (int row = 1; row < height-1; row++) {
-                if (grayValues[col][row] > maxVal)
+        for (int col = 1; col < width - 1; col++) {
+            for (int row = 1; row < height - 1; row++) {
+                if (grayValues[col][row] > maxVal) {
                     maxVal = grayValues[col][row];
+                }
             }
         }
 
-        if (maxVal == 0)
+        if (maxVal == 0) {
             return picture; // return black picture
+        }
 
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {
                 float normalizedGrayValue = (float) grayValues[col][row] / (float) maxVal;
-                if (normalizedGrayValue >= 1.0f) normalizedGrayValue = 1.0f;
-                picture.set(col, row, new Color(normalizedGrayValue, normalizedGrayValue, normalizedGrayValue));
+                if (normalizedGrayValue >= 1.0f) {
+                    normalizedGrayValue = 1.0f;
+                }
+                picture.set(col, row, new Color(
+                                normalizedGrayValue, normalizedGrayValue, normalizedGrayValue));
             }
         }
 
         return picture;
     }
 
-
-    // This method is useful for debugging seams. It overlays red
-    // pixels over the calculate seam. Due to the lack of a copy
-    // constructor, it also alters the original picture.
-    public static Picture seamOverlay(Picture picture, boolean horizontal, int[] seamIndices) {
+    /**
+     * {Method for seam overlay}.
+     *
+     * @param      picture      The picture
+     * @param      horizontal   The horizontal
+     * @param      seamIndices  The seam indices
+     *
+     * @return     {Picture}
+     */
+    public static Picture seamOverlay(
+        final Picture picture,
+        final boolean horizontal, final int[] seamIndices) {
         Picture overlaid = new Picture(picture.width(), picture.height());
         int width = picture.width();
         int height = picture.height();
@@ -103,5 +152,4 @@ public class SCUtility {
 
         return overlaid;
     }
-
 }

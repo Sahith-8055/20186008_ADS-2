@@ -26,89 +26,40 @@ Audit done.
 Checkstyle ends with 23 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:1:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:3:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:5: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:12: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:20:12: ',' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintEnergy.java:27: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:1:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:5: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:5:35: Parameter carver should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:5:54: Parameter seam should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:5:66: Parameter direction should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:12:67: '||' should be on a new line. [OperatorWrap]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:27:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:27:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:29: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:31: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:32: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:39: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:46: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:36:67: '||' should be on a new line. [OperatorWrap]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:56:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:61: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\PrintSeams.java:63: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:3:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:4:28: '3' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:5: Line is longer than 80 characters (found 113). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:13: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:29: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:17:28: '3' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ResizeDemo.java:19: Line is longer than 80 characters (found 102). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:6: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:10:41: Parameter width should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:10:52: Parameter height should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:14:43: '255' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:15:43: '255' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:16:43: '255' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:25:45: Parameter sc should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:27: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:28: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:35:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:35:35: Parameter sc should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:39:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:39:43: Parameter sc should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:45: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:46:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:46:43: Parameter grayValues should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:57:38: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:57:39: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:58:43: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:58:44: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:59: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:64: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:69: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:70: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:71: Line is longer than 80 characters (found 112). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:82: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:82:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:82:39: Parameter picture should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:82:56: Parameter horizontal should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:82:76: Parameter seamIndices should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:87: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:88: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:94: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:96:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:100: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:26:43: '255' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:27:43: '255' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:28:43: '255' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:46: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:47: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:108: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:113: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:136: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:137: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:143: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:145:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SCUtility.java:149: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 39 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\SeamCarver.java:187: 'if' construct must use '{}'s. [NeedBraces]
@@ -121,13 +72,9 @@ Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:1:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:3:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:5: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowEnergy.java:20: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\ShowSeams.java:1: Missing a Javadoc comment. [JavadocType]
