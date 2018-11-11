@@ -166,7 +166,7 @@ public final class Picture implements ActionListener {
             menuItem1.addActionListener(this);
             menuItem1.setAccelerator(KeyStroke.getKeyStroke(
                                          KeyEvent.VK_S,
-                                         Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+                        Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
             menu.add(menuItem1);
             frame.setJMenuBar(menuBar);
 
@@ -212,8 +212,8 @@ public final class Picture implements ActionListener {
     private void validateRowIndex(final int row) {
         if (row < 0 || row >= height()) {
             throw new IllegalArgumentException(
-                "row index must be between 0 and " +
-                (height() - 1) + ": " + row);
+                "row index must be between 0 and "
+                +  (height() - 1) + ": " + row);
         }
     }
 
@@ -225,8 +225,8 @@ public final class Picture implements ActionListener {
     private void validateColumnIndex(final int col) {
         if (col < 0 || col >= width()) {
             throw new IllegalArgumentException(
-                "column index must be between 0 and " +
-                (width() - 1) + ": " + col);
+                "column index must be between 0 and "
+                + (width() - 1) + ": " + col);
         }
     }
 
@@ -303,8 +303,10 @@ public final class Picture implements ActionListener {
       * Returns true if this picture is equal to the argument picture.
       *
       * @param other the other picture
-      * @return {@code true} if this picture is the same dimension as {@code other}
-      * and if all pixels have the same color; {@code false} otherwise
+      * @return {@code true} if this picture
+      * is the same dimension as {@code other}
+      * and if all pixels have the same color;
+      * {@code false} otherwise
       */
     public boolean equals(final Object other) {
         if (other == this) {
@@ -335,10 +337,10 @@ public final class Picture implements ActionListener {
 
     /**
       * Returns a string representation of this picture.
-      * The result is a <code>width</code>-by-<code>height</code> matrix of pixels,
-      * where the color of a pixel is represented using 6 hex digits to encode
+      * The result is a width-by-height matrix of pixels,
+      * where the color of a pixel is represented using
+      * 6 hex digits to encode
       * the red, green, and blue components.
-      *
       * @return a string representation of this picture
       */
     public String toString() {
@@ -430,4 +432,3 @@ public final class Picture implements ActionListener {
         }
     }
 }
-

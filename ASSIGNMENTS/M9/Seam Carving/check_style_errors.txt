@@ -1,12 +1,5 @@
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:169: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:215:52: '+' should be on a new line. [OperatorWrap]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:228:55: '+' should be on a new line. [OperatorWrap]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:306: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M9\Seam Carving\Picture.java:338: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...
