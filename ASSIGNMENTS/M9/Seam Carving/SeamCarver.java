@@ -184,8 +184,9 @@ public class SeamCarver {
 
         path[h - 1] = 0;
         for (int i = 0; i < w; i++) {
-            if (array[h - 1][i] < array[h - 1][path[h - 1]])
+            if (array[h - 1][i] < array[h - 1][path[h - 1]]) {
                 path[h - 1] = i;
+            }
         }
         for (int row = h - 2; row >= 0; row--) {
             int col = path[row + 1];
@@ -230,17 +231,17 @@ public class SeamCarver {
             throw new java.lang.IllegalArgumentException(
                 "IllegalArgumentException");
         }
-        Picture pic = new Picture(width(), height() - 1);
+        Picture picture1 = new Picture(width(), height() - 1);
         for (int w = 0; w < width(); w++) {
             for (int h = 0; h < seam[w]; h++) {
-                pic.set(w, h, this.pic.get(w, h));
+                picture1.set(w, h, this.pic.get(w, h));
             }
 
             for (int h = seam[w] + 1; h < height(); h++) {
-                pic.set(w, h - 1, this.pic.get(w, h));
+                picture1.set(w, h - 1, this.pic.get(w, h));
             }
         }
-        this.pic = pic;
+        this.pic = picture1;
     }
 
 
@@ -275,7 +276,8 @@ public class SeamCarver {
      *
      * @return     True if valid, False otherwise.
      */
-    private boolean isValid(int[] a, int len, int range) {
+    private boolean isValid(final int[] a,
+                            final int len, final int range) {
         if (a == null) {
             return false;
         }

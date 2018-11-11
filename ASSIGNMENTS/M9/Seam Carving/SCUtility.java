@@ -43,9 +43,11 @@ public final class SCUtility {
      */
     public static double[][] toEnergyMatrix(final SeamCarver sc) {
         double[][] returnDouble = new double[sc.width()][sc.height()];
-        for (int col = 0; col < sc.width(); col++)
-            for (int row = 0; row < sc.height(); row++)
+        for (int col = 0; col < sc.width(); col++) {
+            for (int row = 0; row < sc.height(); row++) {
                 returnDouble[col][row] = sc.energy(col, row);
+            }
+        }
 
         return returnDouble;
     }
@@ -105,12 +107,14 @@ public final class SCUtility {
 
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {
-                float normalizedGrayValue = (float) grayValues[col][row] / (float) maxVal;
+                float normalizedGrayValue;
+                normalizedGrayValue = (float) grayValues[col][row] / (float) maxVal;
                 if (normalizedGrayValue >= 1.0f) {
                     normalizedGrayValue = 1.0f;
                 }
                 picture.set(col, row, new Color(
-                                normalizedGrayValue, normalizedGrayValue, normalizedGrayValue));
+                                normalizedGrayValue,
+                                normalizedGrayValue, normalizedGrayValue));
             }
         }
 
@@ -133,23 +137,21 @@ public final class SCUtility {
         int width = picture.width();
         int height = picture.height();
 
-        for (int col = 0; col < width; col++)
-            for (int row = 0; row < height; row++)
+        for (int col = 0; col < width; col++) {
+            for (int row = 0; row < height; row++) {
                 overlaid.set(col, row, picture.get(col, row));
-
+            }
+        }
 
         // if horizontal seam, then set one pixel in every column
+        // if vertical, put one pixel in every row
         if (horizontal) {
             for (int col = 0; col < width; col++)
                 overlaid.set(col, seamIndices[col], Color.RED);
-        }
-
-        // if vertical, put one pixel in every row
-        else {
+        } else {
             for (int row = 0; row < height; row++)
                 overlaid.set(seamIndices[row], row, Color.RED);
         }
-
         return overlaid;
     }
 }
