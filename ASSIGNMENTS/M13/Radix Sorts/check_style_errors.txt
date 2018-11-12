@@ -1,4 +1,17 @@
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:14:29: Parameter a should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:14:41: Parameter w should be final. [FinalParameters]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:16:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:16:17: '256' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:24: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:28: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:32: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\LSD.java:36: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 12 errors.
+Starting audit...
+Audit done.
