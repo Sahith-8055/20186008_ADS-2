@@ -104,7 +104,7 @@ class MSD {
     }
 
     /**
-     * {insertion sort a[lo..hi], starting at dth character}
+     * {insertion sort a[lo..hi], starting at dth character}.
      *
      * @param      a     {String array}
      * @param      lo    The lower
@@ -156,20 +156,18 @@ class MSD {
         return v.length() < w.length();
     }
 
-    // exchange a[i] and a[j]
-    private void exch(int[] a, int i, int j) {
-        int temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
-    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @param      a     {String array}
+     */
     public void toString(final String[] a) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
-        int i;
-        for (i = 0; i < a.length - 1; i++) {
+        for (int i = 0; i < a.length - 1; i++) {
             sb.append(a[i] + ", ");
         }
-        sb.append(a[i] + "]");
+        sb.append(a[a.length - 1] + "]");
         System.out.println(sb.toString());
     }
 }
