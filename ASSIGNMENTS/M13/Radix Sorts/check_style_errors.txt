@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:5:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:17:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:17:17: '256' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:53:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:54:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:55:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:99:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:114: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:122:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:130:23: '6' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 14 errors.
