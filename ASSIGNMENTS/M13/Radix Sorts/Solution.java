@@ -24,7 +24,7 @@ class MSD {
     /**
      * Constructs the object.
      */
-    public MSD() {
+    MSD() {
         // do not instantiate.
     }
 
