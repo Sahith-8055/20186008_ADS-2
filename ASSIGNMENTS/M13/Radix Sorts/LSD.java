@@ -1,6 +1,15 @@
-public class LSD {
+/**
+ * Class for lsd.
+ */
+public final class LSD {
+    /**
+     * {Bits per byte}.
+     */
     private static final int BITS_PER_BYTE = 8;
 
+    /**
+     * Constructs the object.
+     */
     protected LSD() {
         // do not instantiate.
     }
@@ -11,7 +20,7 @@ public class LSD {
       * @param a the array to be sorted
       * @param w the number of characters per string
       */
-    public static void sort(String[] a, int w) {
+    public static void sort(final String[] a, final int w) {
         int n = a.length;
         int R = 256;   // extend ASCII alphabet size
         String[] aux = new String[n];
@@ -21,20 +30,24 @@ public class LSD {
 
             // compute frequency counts
             int[] count = new int[R + 1];
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++) {
                 count[a[i].charAt(d) + 1]++;
+            }
 
             // compute cumulates
-            for (int r = 0; r < R; r++)
+            for (int r = 0; r < R; r++) {
                 count[r + 1] += count[r];
+            }
 
             // move data
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++) {
                 aux[count[a[i].charAt(d)]++] = a[i];
+            }
 
             // copy back
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++) {
                 a[i] = aux[i];
+            }
         }
     }
     /**
