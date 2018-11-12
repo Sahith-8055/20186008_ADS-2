@@ -20,22 +20,23 @@ public final class LSD {
       * @param a the array to be sorted
       * @param w the number of characters per string
       */
-    public static void sort(final String[] a, final int w) {
+    public void sort(final String[] a, final int w) {
+        final int x = 256;
         int n = a.length;
-        int R = 256;   // extend ASCII alphabet size
+        int radix = x;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
         for (int d = w - 1; d >= 0; d--) {
             // sort by key-indexed counting on dth character
 
             // compute frequency counts
-            int[] count = new int[R + 1];
+            int[] count = new int[radix + 1];
             for (int i = 0; i < n; i++) {
                 count[a[i].charAt(d) + 1]++;
             }
 
             // compute cumulates
-            for (int r = 0; r < R; r++) {
+            for (int r = 0; r < radix; r++) {
                 count[r + 1] += count[r];
             }
 
