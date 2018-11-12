@@ -1,7 +1,5 @@
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:27:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:177: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:185:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
