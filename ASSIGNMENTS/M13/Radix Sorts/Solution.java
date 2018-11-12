@@ -127,7 +127,7 @@ public class Solution {
             array[i] = scan.nextLine();
         }
         LSD l = new LSD();
-        l.sort(array, 6);
+        l.sort(array, 8);
         l.toString(array);
     }
 }

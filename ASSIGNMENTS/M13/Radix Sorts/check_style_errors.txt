@@ -12,6 +12,6 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:99:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:114: Class Solution should be declared as final. [FinalClass]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:122:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:130:23: '6' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M13\Radix Sorts\Solution.java:130:23: '8' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 14 errors.
