@@ -1,4 +1,9 @@
 Starting audit...
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\In.java:97: 'if' construct must use '{}'s. [NeedBraces]
+Audit done.
+Checkstyle ends with 2 errors.
+Starting audit...
 Audit done.
 Starting audit...
 Audit done.
