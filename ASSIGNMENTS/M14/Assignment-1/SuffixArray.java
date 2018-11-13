@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Class for suffix array.
  */
-public class SuffixArray {
+public final class SuffixArray {
     /**
      * {suffixes}.
      */
@@ -72,11 +72,17 @@ public class SuffixArray {
          * @return     {Integer}
          */
         public int compareTo(final Suffix that) {
-            if (this == that) return 0;  // optimization
+            if (this == that) {
+                return 0;
+            }
             int n = Math.min(this.length(), that.length());
             for (int i = 0; i < n; i++) {
-                if (this.charAt(i) < that.charAt(i)) return -1;
-                if (this.charAt(i) > that.charAt(i)) return +1;
+                if (this.charAt(i) < that.charAt(i)) {
+                    return -1;
+                }
+                if (this.charAt(i) > that.charAt(i)) {
+                    return +1;
+                }
             }
             return this.length() - that.length();
         }
@@ -101,10 +107,9 @@ public class SuffixArray {
 
 
     /**
-     * Returns the index into the original string of the <em>i</em>th smallest suffix.
-     * That is, {@code text.substring(sa.index(i))} is the <em>i</em>th smallest suffix.
      * @param i an integer between 0 and <em>n</em>-1
-     * @return the index into the original string of the <em>i</em>th smallest suffix
+     * @return the index into the original string
+     * of the <em>i</em>th smallest suffix
      */
     public int index(final int i) {
         return suffixes[i].index;
@@ -112,10 +117,8 @@ public class SuffixArray {
 
 
     /**
-     * Returns the length of the longest common prefix of the <em>i</em>th
-     * smallest suffix and the <em>i</em>-1st smallest suffix.
      * @param i an integer between 1 and <em>n</em>-1
-     * @return the length of the longest common prefix of the <em>i</em>th
+     * @return the length of the longest common prefix.
      * smallest suffix and the <em>i</em>-1st smallest suffix.
      */
     public int lcp(final int i) {
@@ -151,9 +154,6 @@ public class SuffixArray {
     }
 
     /**
-     * Returns the number of suffixes strictly less than the {@code query} string.
-     * We note that {@code rank(select(i))} equals {@code i} for each {@code i}
-     * between 0 and <em>n</em>-1.
      * @param query the query string
      * @return the number of suffixes strictly less than {@code query}
      */

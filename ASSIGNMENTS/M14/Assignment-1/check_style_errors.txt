@@ -8,17 +8,10 @@ Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:28: Class Suffix should be declared as final. [FinalClass]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:75: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:79: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:104: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:105: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:107: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:154: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:188: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\SuffixArray.java:189: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M14\Assignment-1\TST.java:221: Line is longer than 80 characters (found 81). [LineLength]
