@@ -25,7 +25,7 @@ public final class SuffixArray {
     /**
      * Class for suffix.
      */
-    private class Suffix implements Comparable<Suffix> {
+    private final class Suffix implements Comparable<Suffix> {
         /**
          * {String text}.
          */
@@ -185,8 +185,12 @@ public final class SuffixArray {
     private int compare(final String query, final Suffix suffix) {
         int n = Math.min(query.length(), suffix.length());
         for (int i = 0; i < n; i++) {
-            if (query.charAt(i) < suffix.charAt(i)) return -1;
-            if (query.charAt(i) > suffix.charAt(i)) return +1;
+            if (query.charAt(i) < suffix.charAt(i)) {
+                return -1;
+            }
+            if (query.charAt(i) > suffix.charAt(i)) {
+                return +1;
+            }
         }
         return query.length() - suffix.length();
     }
