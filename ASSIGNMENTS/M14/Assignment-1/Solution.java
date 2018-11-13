@@ -1,6 +1,19 @@
 import java.util.Scanner;
-//import java.util.Arrays;
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Unused Constructor.
+    }
+    /**
+     * {Client Program}.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         String[] words = loadWords();
         Scanner scan = new Scanner(System.in);
