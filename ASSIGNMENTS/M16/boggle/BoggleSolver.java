@@ -22,9 +22,6 @@ public class BoggleSolver {
     }
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
     public Iterable<String> getAllValidWords(BoggleBoard board) {
-        if (board == null) {
-            throw new IllegalArgumentException("board is null");
-        }
         marked = new boolean[board.rows()][board.cols()];
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
@@ -36,9 +33,11 @@ public class BoggleSolver {
     }
     private String appendCharacter(String sb, char c) {
         if (c == 'Q') {
-            return sb + "QU";
+            sb += "QU";
+            return sb;
         } else {
-            return sb + c;
+            sb += c;
+            return sb;
         }
     }
     private boolean isValidWord(String word) {
