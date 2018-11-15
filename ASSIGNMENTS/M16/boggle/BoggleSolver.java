@@ -42,7 +42,7 @@ public class BoggleSolver {
         }
     }
     private boolean isValidWord(String word) {
-        if (word.length() < 3) {
+        if (word.length() <= 2) {
             return false;
         }
         return dictionaryTrie.contains(word);

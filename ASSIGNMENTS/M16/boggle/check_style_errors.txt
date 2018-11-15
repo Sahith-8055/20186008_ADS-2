@@ -507,7 +507,6 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:37:47: Parameter c should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:44:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:44:33: Parameter word should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:45:29: '3' is a magic number. [MagicNumber]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:51:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'dfs' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'dfs' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:51:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:51:21: Parameter board should be final. [FinalParameters]
@@ -527,7 +526,7 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:79:24: Parameter word should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:80: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 39 errors.
+Checkstyle ends with 38 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
