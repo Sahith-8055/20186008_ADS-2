@@ -14,7 +14,7 @@ public class BoggleSolver {
         int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
         for (String word : dictionary) {
             if (word.length() >= 8) {
-                dictionaryTrie.put(word, 11);
+                dictionaryTrie.put(word, points[points.length - 1]);
             } else {
                 dictionaryTrie.put(word, points[word.length()]);
             }
@@ -50,10 +50,10 @@ public class BoggleSolver {
 
     public void dfs(BoggleBoard board, boolean[][] marked,
                     int rows, int cols, String word) {
-        //if (dictionaryTrie.hasPrefix(word)) return;
-
+        if (!dictionaryTrie.hasPrefix(word)) {
+            return;
+        }
         if (isValidWord(word)) {
-            //System.out.println(word + "----" + scoreOf(word));
             validWords.add(word);
         }
         marked[rows][cols] = true;
