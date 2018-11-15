@@ -36,13 +36,15 @@ public class BoggleSolver {
     }
     private String appendCharacter(String sb, char c) {
         if (c == 'Q') {
-            return sb + "QU";
+            sb += sb + "QU";
+            return sb;
         } else {
-            return sb + c;
+            sb += c;
+            return sb;
         }
     }
     private boolean isValidWord(String word) {
-        if (word.length() < 3) {
+        if (word.length() <= 2) {
             return false;
         }
         return dictionaryTrie.contains(word);
@@ -50,10 +52,7 @@ public class BoggleSolver {
 
     public void dfs(BoggleBoard board, boolean[][] marked,
                     int rows, int cols, String word) {
-        //if (dictionaryTrie.hasPrefix(word)) return;
-
         if (isValidWord(word)) {
-            //System.out.println(word + "----" + scoreOf(word));
             validWords.add(word);
         }
         marked[rows][cols] = true;
@@ -77,7 +76,9 @@ public class BoggleSolver {
     // (You can assume the word contains
     // only the uppercase letters A through Z.)
     public int scoreOf(String word) {
-        if (word == null) return 0;
+        if (word == null) {
+            return 0;
+        }
         if (dictionaryTrie.contains(word)) {
             return dictionaryTrie.get(word);
         }

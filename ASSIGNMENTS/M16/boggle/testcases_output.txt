@@ -6,12 +6,12 @@ Your Output:
 Score = 33
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 Score = 84
 
 Your Output: 
-Score = 84
+Score = 52
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########
@@ -62,12 +62,12 @@ Your Output:
 Score = 7
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 Score = 155
 
 Your Output: 
-Score = 155
+Score = 123
 ----------------------------------------
 
 ########## Testcase 9: Passed ##########
@@ -86,20 +86,20 @@ Your Output:
 Score = 68
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 Score = 147
 
 Your Output: 
-Score = 147
+
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 Score = 687
 
 Your Output: 
-Score = 687
+Score = 573
 ----------------------------------------
 
 ########## Testcase 13: Passed ##########
