@@ -72,6 +72,15 @@ public class TrieST<Value> {
         return get(key) != null;
     }
 
+    /**
+     * {Private method for get}.
+     *
+     * @param      x     {Node}
+     * @param      key   The key
+     * @param      d     {Integer}
+     *
+     * @return     {Node}
+     */
     private Node get(final Node x, final String key, final int d) {
         if (x == null) {
             return null;
@@ -114,6 +123,16 @@ public class TrieST<Value> {
         }
     }
 
+    /**
+     * {Private method for put}.
+     *
+     * @param      x     {Node}
+     * @param      key   The key
+     * @param      val   The value
+     * @param      d     {Integer}
+     *
+     * @return     {Node}
+     */
     private Node put(final Node x, final String key,
                      final Value val, final int d) {
         if (x == null) {
@@ -147,122 +166,6 @@ public class TrieST<Value> {
         return size() == 0;
     }
 
-    /**
-     * Returns all keys in the symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
-     * @return all keys in the symbol table as an {@code Iterable}
-     */
-    public Iterable<String> keys() {
-        return keysWithPrefix("");
-    }
-
-    /**
-     * Returns all of the keys in the set that start with {@code prefix}.
-     * @param prefix the prefix
-     * @return all of the keys in the set that start with {@code prefix},
-     *     as an iterable
-     */
-    public Iterable<String> keysWithPrefix(final String prefix) {
-        Queue<String> results = new Queue<String>();
-        Node x = get(root, prefix, 0);
-        collect(x, new StringBuilder(prefix), results);
-        return results;
-    }
-
-    private void collect(final Node x, final StringBuilder prefix,
-                         final Queue<String> results) {
-        if (x == null) {
-            return;
-        }
-        if (x.val != null) {
-            results.enqueue(prefix.toString());
-        }
-        for (char c = 0; c < R; c++) {
-            prefix.append(c);
-            collect(x.next[c], prefix, results);
-            prefix.deleteCharAt(prefix.length() - 1);
-        }
-    }
-
-    /**
-     * Returns all of the keys in the symbol table that match {@code pattern},
-     * where . symbol is treated as a wildcard character.
-     * @param pattern the pattern
-     * @return all of the keys in the symbol table that match {@code pattern},
-     *     as an iterable, where . is treated as a wildcard character.
-     */
-    public Iterable<String> keysThatMatch(final String pattern) {
-        Queue<String> results = new Queue<String>();
-        collect(root, new StringBuilder(), pattern, results);
-        return results;
-    }
-
-    private void collect(final Node x, final StringBuilder prefix,
-                         final String pattern, final Queue<String> results) {
-        if (x == null) {
-            return;
-        }
-        int d = prefix.length();
-        if (d == pattern.length() && x.val != null) {
-            results.enqueue(prefix.toString());
-        }
-        if (d == pattern.length()) {
-            return;
-        }
-        char c = pattern.charAt(d);
-        if (c == '.') {
-            for (char ch = 0; ch < R; ch++) {
-                prefix.append(ch);
-                collect(x.next[ch], prefix, pattern, results);
-                prefix.deleteCharAt(prefix.length() - 1);
-            }
-        } else {
-            prefix.append(c);
-            collect(x.next[c], prefix, pattern, results);
-            prefix.deleteCharAt(prefix.length() - 1);
-        }
-    }
-
-    /**
-     * Returns the string in the symbol table that is the longest prefix of {@code query},
-     * or {@code null}, if no such string.
-     * @param query the query string
-     * @return the string in the symbol table that is the longest prefix of {@code query},
-     *     or {@code null} if no such string
-     * @throws IllegalArgumentException if {@code query} is {@code null}
-     */
-    public String longestPrefixOf(final String query) {
-        if (query == null) {
-            throw new IllegalArgumentException(
-                "argument to longestPrefixOf() is null");
-        }
-        int length = longestPrefixOf(root, query, 0, -1);
-        if (length == -1) {
-            return null;
-        } else {
-            return query.substring(0, length);
-        }
-    }
-
-    // returns the length of the longest string key in the subtrie
-    // rooted at x that is a prefix of the query string,
-    // assuming the first d character match and we have already
-    // found a prefix match of given length (-1 if no such match)
-    private int longestPrefixOf(final Node x, final String query,
-                                final int d, final int length) {
-        if (x == null) {
-            return length;
-        }
-        if (x.val != null) {
-            length = d;
-        }
-        if (d == query.length()) {
-            return length;
-        }
-        char c = query.charAt(d);
-        return longestPrefixOf(x.next[c], query, d + 1, length);
-    }
 
     /**
      * Removes the key from the set if the key is present.
