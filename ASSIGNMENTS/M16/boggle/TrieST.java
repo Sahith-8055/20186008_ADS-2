@@ -7,7 +7,7 @@ public class TrieST<Value> {
     /**
      * {extended ASCII}.
      */
-    private static final int a = 26;
+    private static final int RADIX = 26;
     /**
      * {root of trie}.
      */
@@ -28,7 +28,7 @@ public class TrieST<Value> {
         /**
          * {next of type node}.
          */
-        private Node[] next = new Node[a];
+        private Node[] next = new Node[RADIX];
     }
 
     /**
@@ -194,7 +194,7 @@ public class TrieST<Value> {
         if (x.val != null) {
             return x;
         }
-        for (int c = 0; c < a; c++) {
+        for (int c = 0; c < RADIX; c++) {
             if (x.next[c] != null) {
                 return x;
             }
