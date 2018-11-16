@@ -488,45 +488,15 @@ Audit done.
 Checkstyle ends with 395 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:11:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:11:25: Parameter dictionary should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:14:43: '3' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:14:46: '5' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:14:49: '11' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:16:34: '8' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:23: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:24:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:24:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:24:46: Parameter board should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:34:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:34:36: Parameter sb should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:34:47: Parameter c should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:43:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:43:33: Parameter word should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:50:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'dfs' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'dfs' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:50:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:50:21: Parameter board should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:50:40: Parameter marked should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:50:52: 'marked' hides a field. [HiddenField]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:51:21: Parameter rows should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:51:31: Parameter cols should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:51:41: Parameter word should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:62: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:70:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:70:38: Parameter row should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:70:47: Parameter col should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:70:56: Parameter board should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:71: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:78:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:78:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:78:24: Parameter word should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:79: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:28:43: '3' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:28:46: '5' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:28:49: '11' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:30:34: '8' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:96:64: 'marked' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:109: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:128: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
@@ -710,12 +680,11 @@ Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:6: Class Solution should be declared as final. [FinalClass]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
