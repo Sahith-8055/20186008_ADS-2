@@ -1,12 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac BoggleBoard.java
- *  Execution:    java  BoggleBoard
- *  Dependencies: StdRandom.java In.java StdOut.java
- *
- *  A data type for Boggle boards.
- *
- ******************************************************************************/
-
 public class BoggleBoard {
     // the 16 Boggle dice (1992 version)
     private static final String[] BOGGLE_1992 = {
