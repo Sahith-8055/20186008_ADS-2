@@ -7,7 +7,7 @@ public class TrieST<Value> {
     /**
      * {extended ASCII}.
      */
-    private static final int radix = 26;
+    private static final int radixValue = 26;
     /**
      * {root of trie}.
      */
@@ -28,7 +28,7 @@ public class TrieST<Value> {
         /**
          * {next of type node}.
          */
-        private Node[] next = new Node[radix];
+        private Node[] next = new Node[radixValue];
     }
 
     /**
@@ -83,6 +83,7 @@ public class TrieST<Value> {
      * @return     {Node}
      */
     private Node get(final Node x, final String key, final int d) {
+        final int y = 65;
         if (x == null) {
             return null;
         }
@@ -90,7 +91,7 @@ public class TrieST<Value> {
             return x;
         }
         char c = key.charAt(d);
-        return get(x.next[c - 65], key, d + 1);
+        return get(x.next[c - y], key, d + 1);
     }
 
     /**
@@ -137,6 +138,7 @@ public class TrieST<Value> {
     private Node put(final Node x, final String key,
                      final Value val, final int d) {
         Node x1 = x;
+        final int z = 65;
         if (x1 == null) {
             x1 = new Node();
         }
@@ -148,7 +150,7 @@ public class TrieST<Value> {
             return x1;
         }
         char c = key.charAt(d);
-        x1.next[c - 65] = put(x1.next[c - 65], key, val, d + 1);
+        x1.next[c - z] = put(x1.next[c - z], key, val, d + 1);
         return x1;
     }
 
@@ -192,7 +194,7 @@ public class TrieST<Value> {
         if (x.val != null) {
             return x;
         }
-        for (int c = 0; c < radix; c++) {
+        for (int c = 0; c < radixValue; c++) {
             if (x.next[c] != null) {
                 return x;
             }
