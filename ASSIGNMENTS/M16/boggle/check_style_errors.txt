@@ -488,8 +488,11 @@ Audit done.
 Checkstyle ends with 395 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:97:64: 'marked' hides a field. [HiddenField]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:110: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\BoggleSolver.java:129: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
