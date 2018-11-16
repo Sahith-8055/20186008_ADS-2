@@ -25,9 +25,10 @@ public class BoggleSolver {
     BoggleSolver(final String[] dictionary) {
         this.dictionaryTrie = new TrieST<Integer>();
         this.validWords = new TreeSet<String>();
-        int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
+        final int x = 11;
+        int[] points = {0, 0, 0, 1, 1, 2, (2 + 1), (2 + 2 + 1), x};
         for (String word : dictionary) {
-            if (word.length() >= 8) {
+            if (word.length() >= 2 + 2 + 2 + 2) {
                 dictionaryTrie.put(word, points[points.length - 1]);
             } else {
                 dictionaryTrie.put(word, points[word.length()]);
@@ -88,12 +89,12 @@ public class BoggleSolver {
      * {Method of traversal and finding the valid word}.
      *
      * @param      board   The board
-     * @param      marked  The marked
+     * @param      marked1  The marked
      * @param      rows    The rows
      * @param      cols    The cols
      * @param      word    The word
      */
-    public void dfs(final BoggleBoard board, final boolean[][] marked,
+    public void dfs(final BoggleBoard board, final boolean[][] marked1,
                     final int rows, final int cols,
                     final String word) {
         if (!dictionaryTrie.hasPrefix(word)) {
@@ -102,12 +103,13 @@ public class BoggleSolver {
         if (isValidWord(word)) {
             validWords.add(word);
         }
-        marked[rows][cols] = true;
+        marked1[rows][cols] = true;
         for (int i = rows - 1; i <= rows + 1; i++) {
             for (int j = cols - 1; j <= cols + 1; j++) {
-                if (isValidRowColumn(i, j, board) && !marked[i][j]) {
-                    String sequence = appendCharacter(word, board.getLetter(i, j));
-                    dfs(board, marked, i, j, sequence);
+                if (isValidRowColumn(i, j, board) && !marked1[i][j]) {
+                    String sequence = appendCharacter(
+                                          word, board.getLetter(i, j));
+                    dfs(board, marked1, i, j, sequence);
                 }
             }
         }
@@ -125,7 +127,8 @@ public class BoggleSolver {
      */
     private boolean isValidRowColumn(final int row, final int col,
                                      final BoggleBoard board) {
-        return (row >= 0 && col >= 0 && row < board.rows() && col < board.cols());
+        return (row >= 0 && col >= 0
+                && row < board.rows() && col < board.cols());
     }
 
 
