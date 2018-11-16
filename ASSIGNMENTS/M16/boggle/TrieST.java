@@ -7,7 +7,7 @@ public class TrieST<Value> {
     /**
      * {extended ASCII}.
      */
-    private static final int R = 26;
+    private static final int radix = 26;
     /**
      * {root of trie}.
      */
@@ -28,7 +28,7 @@ public class TrieST<Value> {
         /**
          * {next of type node}.
          */
-        private Node[] next = new Node[R];
+        private Node[] next = new Node[radix];
     }
 
     /**
@@ -106,9 +106,8 @@ public class TrieST<Value> {
     }
 
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
+     * Inserts the key-value pair into the symbol table.
      * with the new value if the key is already in the symbol table.
-     * If the value is {@code null}, this effectively deletes the key from the symbol table.
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -125,6 +124,16 @@ public class TrieST<Value> {
         }
     }
 
+    /**
+     * {Private method for put}.
+     *
+     * @param      x     {Node}
+     * @param      key   The key
+     * @param      val   The value
+     * @param      d     {Integer}
+     *
+     * @return     {Node}
+     */
     private Node put(final Node x, final String key,
                      final Value val, final int d) {
         Node x1 = x;
@@ -148,15 +157,31 @@ public class TrieST<Value> {
      * @param key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void delete(String key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
+    public void delete(final String key) {
+        if (key == null) {
+            throw new IllegalArgumentException(
+                "argument to delete() is null");
+        }
         root = delete(root, key, 0);
     }
 
-    private Node delete(Node x, String key, int d) {
-        if (x == null) return null;
+    /**
+     * {Private method for delete}.
+     *
+     * @param      x     {Node}
+     * @param      key   The key
+     * @param      d     {Integer}
+     *
+     * @return     {Node}
+     */
+    private Node delete(final Node x, final String key, final int d) {
+        if (x == null) {
+            return null;
+        }
         if (d == key.length()) {
-            if (x.val != null) n--;
+            if (x.val != null) {
+                n--;
+            }
             x.val = null;
         } else {
             char c = key.charAt(d);
@@ -164,10 +189,14 @@ public class TrieST<Value> {
         }
 
         // remove subtrie rooted at x if it is completely empty
-        if (x.val != null) return x;
-        for (int c = 0; c < R; c++)
-            if (x.next[c] != null)
+        if (x.val != null) {
+            return x;
+        }
+        for (int c = 0; c < radix; c++) {
+            if (x.next[c] != null) {
                 return x;
+            }
+        }
         return null;
     }
 }

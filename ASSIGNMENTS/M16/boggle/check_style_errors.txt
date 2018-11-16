@@ -999,23 +999,9 @@ Audit done.
 Checkstyle ends with 183 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:10:30: Name 'radix' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:93:31: '65' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:109: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:111: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:128:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:142:21: '65' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:142:43: '65' is a magic number. [MagicNumber]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:151:24: Parameter key should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:152: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:152: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:156:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:156:25: Parameter x should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:156:33: Parameter key should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:156:45: Parameter d should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:157: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:159: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:167: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:168: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:169: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:151:21: '65' is a magic number. [MagicNumber]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:151:43: '65' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 5 errors.
