@@ -41,7 +41,7 @@ public class TrieST<Value> {
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the given key
+     * @return the value associated with the given key if the key is in the symbol table
      * and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -58,10 +58,10 @@ public class TrieST<Value> {
     }
 
     /**
-     * Does this symbol table contain the given key?.
+     * Does this symbol table contain the given key?
      * @param key the key
      * @return {@code true} if this symbol table contains {@code key} and
-     * {@code false} otherwise
+     *     {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(final String key) {
@@ -150,6 +150,24 @@ public class TrieST<Value> {
         x1.next[c - 65] = put(x1.next[c - 65], key, val, d + 1);
         return x;
     }
+
+    /**
+     * Returns the number of key-value pairs in this symbol table.
+     * @return the number of key-value pairs in this symbol table
+     */
+    public int size() {
+        return n;
+    }
+
+    /**
+     * Is this symbol table empty?
+     * @return {@code true} if this symbol table is empty and {@code false} otherwise
+     */
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
+
     /**
      * Removes the key from the set if the key is present.
      * @param key the key
