@@ -998,6 +998,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 183 errors.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:10:30: Name 'radixValue' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\TrieST.java:10:30: Name 'radixvalue' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
 Audit done.
 Checkstyle ends with 1 errors.
