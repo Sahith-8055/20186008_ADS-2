@@ -97,22 +97,24 @@ public class BoggleSolver {
     public void dfs(final BoggleBoard board, final boolean[][] marked,
                     final int rows, final int cols,
                     final String word) {
+        boolean[][] marked1 = marked;
         if (!dictionaryTrie.hasPrefix(word)) {
             return;
         }
         if (isValidWord(word)) {
             validWords.add(word);
         }
-        marked[rows][cols] = true;
+        marked1[rows][cols] = true;
         for (int i = rows - 1; i <= rows + 1; i++) {
             for (int j = cols - 1; j <= cols + 1; j++) {
-                if (isValidRowColumn(i, j, board) && !marked[i][j]) {
-                    String sequence = appendCharacter(word, board.getLetter(i, j));
-                    dfs(board, marked, i, j, sequence);
+                if (isValidRowColumn(i, j, board) && !marked1[i][j]) {
+                    String sequence = appendCharacter(
+                                          word, board.getLetter(i, j));
+                    dfs(board, marked1, i, j, sequence);
                 }
             }
         }
-        marked[rows][cols] = false;
+        marked1[rows][cols] = false;
     }
 
     /**
@@ -126,7 +128,8 @@ public class BoggleSolver {
      */
     private boolean isValidRowColumn(final int row, final int col,
                                      final BoggleBoard board) {
-        return (row >= 0 && col >= 0 && row < board.rows() && col < board.cols());
+        return (row >= 0 && col >= 0
+                && row < board.rows() && col < board.cols());
     }
 
 
