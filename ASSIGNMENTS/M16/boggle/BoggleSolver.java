@@ -15,7 +15,7 @@ public class BoggleSolver {
     /**
      * {Marked array which is of type boolean}.
      */
-    private boolean[][] marked;
+    private boolean[][] marked1;
 
     /**
      * Constructs the object.
@@ -44,11 +44,11 @@ public class BoggleSolver {
      * @return     All valid words.
      */
     public Iterable<String> getAllValidWords(final BoggleBoard board) {
-        marked = new boolean[board.rows()][board.cols()];
+        marked1 = new boolean[board.rows()][board.cols()];
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
                 String sb = appendCharacter("", board.getLetter(i, j));
-                dfs(board, marked, i, j, sb);
+                dfs(board, marked1, i, j, sb);
             }
         }
         return validWords;
@@ -97,24 +97,23 @@ public class BoggleSolver {
     public void dfs(final BoggleBoard board, final boolean[][] marked,
                     final int rows, final int cols,
                     final String word) {
-        boolean[][] marked1 = marked;
         if (!dictionaryTrie.hasPrefix(word)) {
             return;
         }
         if (isValidWord(word)) {
             validWords.add(word);
         }
-        marked1[rows][cols] = true;
+        marked[rows][cols] = true;
         for (int i = rows - 1; i <= rows + 1; i++) {
             for (int j = cols - 1; j <= cols + 1; j++) {
-                if (isValidRowColumn(i, j, board) && !marked1[i][j]) {
+                if (isValidRowColumn(i, j, board) && !marked[i][j]) {
                     String sequence = appendCharacter(
                                           word, board.getLetter(i, j));
-                    dfs(board, marked1, i, j, sequence);
+                    dfs(board, marked, i, j, sequence);
                 }
             }
         }
-        marked1[rows][cols] = false;
+        marked[rows][cols] = false;
     }
 
     /**
