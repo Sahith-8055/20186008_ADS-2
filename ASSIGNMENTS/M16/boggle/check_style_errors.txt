@@ -675,12 +675,8 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
