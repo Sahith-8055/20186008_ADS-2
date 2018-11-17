@@ -90,12 +90,25 @@ public class Solution {
         }
     }
 
-    // Don't modify this method.
+    /**
+     * {Method to read files}.
+     *
+     * @param      file  The file
+     *
+     * @return     {Array of string}
+     */
     public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
 
+    /**
+     * Loads a dictionary.
+     *
+     * @param      file  The file
+     *
+     * @return     {Symbol Table}
+     */
     public static BinarySearchST<String, Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
@@ -113,8 +126,20 @@ public class Solution {
     }
 }
 
+/**
+ * Class for t9.
+ */
 class T9 {
+    /**
+     * {Ternary Search Trie}.
+     */
     private TST<Integer> tst;
+
+    /**
+     * Constructs the object.
+     *
+     * @param      st    {Symbol Table Object}
+     */
     public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         this.tst = new TST<Integer>();
@@ -123,18 +148,68 @@ class T9 {
         }
     }
 
-    // get all the prefixes that match with given prefix.
+
+    /**
+     * get all the prefixes that match with given prefix.
+     *
+     * @param      prefix  The prefix
+     *
+     * @return     All words.
+     */
     public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
         return tst.keysWithPrefix(prefix);
     }
 
+    /**
+     * {Method to get the potential words}.
+     *
+     * @param      t9Signature  The t9 signature
+     *
+     * @return     {Iterable}
+     */
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
-        return null;
+        TreeSet<String> set = new TreeSet<String>();
+        for (String word : tst.keys()) {
+            String[] tokens1 = word.split("");
+            String format = "";
+            for (String str : tokens1) {
+                if (str.equals("a") || str.equals("b") || str.equals("c")) {
+                    format += "2";
+                } else if (str.equals("d") || str.equals("e") || str.equals("f")) {
+                    format += "3";
+                } else if (str.equals("g") || str.equals("h") || str.equals("i")) {
+                    format += "4";
+                } else if (str.equals("j") || str.equals("k") || str.equals("l")) {
+                    format += "5";
+                } else if (str.equals("m") || str.equals("n") || str.equals("o")) {
+                    format += "6";
+                } else if (str.equals("p") || str.equals("q") || str.equals("r") || str.equals("s")) {
+                    format += "7";
+                } else if (str.equals("t") || str.equals("u") || str.equals("v")) {
+                    format += "8";
+                } else if (str.equals("w") || str.equals("x") || str.equals("y") || str.equals("z")) {
+                    format += "9";
+                }
+            }
+            if (format.equals(t9Signature)) {
+                set.add(word);
+            }
+        }
+        return set;
     }
 
-    // return all possibilities(words), find top k with highest frequency.
+
+    /**
+     * return all possibilities(words).
+     * find top k with highest frequency.
+     *
+     * @param      words  The words
+     * @param      k      {Limit}
+     *
+     * @return     The suggestions.
+     */
     public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
         // your code goes here
         MaxPQ<Integer> pq = new MaxPQ<Integer>();
@@ -153,8 +228,15 @@ class T9 {
         return set;
     }
 
-    // final output
-    // Don't modify this method.
+
+    /**
+     * {Final method}.
+     *
+     * @param      t9Signature  The t9 signature
+     * @param      k            {Integer}
+     *
+     * @return     {Iterable}
+     */
     public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
