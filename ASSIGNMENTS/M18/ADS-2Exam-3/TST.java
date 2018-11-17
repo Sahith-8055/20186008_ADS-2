@@ -116,7 +116,7 @@ public class TST<Value> {
     }
 
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value.
+     * Inserts the key-value pair into the symbol table.
      * with the new value if the key is already in the symbol table.
      * If the value is {@code null}
      * @param key the key
@@ -125,7 +125,8 @@ public class TST<Value> {
      */
     public void put(final String key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException("calls put() with null key");
+            throw new IllegalArgumentException(
+                "calls put() with null key");
         }
         if (!contains(key)) {
             n++;
@@ -168,7 +169,7 @@ public class TST<Value> {
      * @return the string in the symbol table
      * @throws IllegalArgumentException if {@code query} is {@code null}
      */
-    public String longestPrefixOf(String query) {
+    public String longestPrefixOf(final String query) {
         if (query == null) {
             throw new IllegalArgumentException(
                 "calls longestPrefixOf() with null argument");
@@ -241,7 +242,8 @@ public class TST<Value> {
      * @param      queue   The queue
      */
     private void collect(final Node<Value> x,
-                         final StringBuilder prefix, final Queue<String> queue) {
+                         final StringBuilder prefix,
+                         final Queue<String> queue) {
         if (x == null) {
             return;
         }
@@ -266,6 +268,15 @@ public class TST<Value> {
         return queue;
     }
 
+    /**
+     * {Collect method}.
+     *
+     * @param      x        {Node}
+     * @param      prefix   The prefix
+     * @param      i        {Integer}
+     * @param      pattern  The pattern
+     * @param      queue    The queue
+     */
     private void collect(final Node<Value> x, final StringBuilder prefix,
                          final int i, final String pattern,
                          final Queue<String> queue) {
@@ -290,6 +301,13 @@ public class TST<Value> {
         }
     }
 
+    /**
+     * Determines if it has prefix.
+     *
+     * @param      prefix  The prefix
+     *
+     * @return     True if has prefix, False otherwise.
+     */
     public boolean hasPrefix(final String prefix) {
         Node<Value> prefixNode = get(root, prefix, 0);
         if (prefixNode == null) {

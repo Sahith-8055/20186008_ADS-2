@@ -378,12 +378,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:119: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:171:35: Parameter query should be final. [FinalParameters]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:244: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:269:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:293:5: Class 'TST' looks like designed for extension (can be subclassed), but the method 'hasPrefix' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TST' final or making the method 'hasPrefix' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:293:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:301:63: '&&' should be on a new line. [OperatorWrap]
+[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:319:63: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 2 errors.
