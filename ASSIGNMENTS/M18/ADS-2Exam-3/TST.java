@@ -316,8 +316,8 @@ public class TST<Value> {
         if (prefixNode.val != null) {
             return true;
         }
-        if (prefixNode.left == null && prefixNode.mid == null &&
-                prefixNode.right == null) {
+        if (prefixNode.left == null && prefixNode.mid == null
+                &&  prefixNode.right == null) {
             return false;
         }
         return true;

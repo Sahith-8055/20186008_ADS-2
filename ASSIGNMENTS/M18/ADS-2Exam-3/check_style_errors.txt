@@ -377,7 +377,4 @@ Checkstyle ends with 33 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:319:63: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 2 errors.
