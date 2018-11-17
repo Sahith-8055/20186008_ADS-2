@@ -393,9 +393,7 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:107:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:108:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:108:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:108:19: Parameter st should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:117:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:117:45: Parameter prefix should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:122:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:122:48: Parameter t9Signature should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:128:9: Missing a Javadoc comment. [JavadocMethod]
@@ -405,7 +403,7 @@ Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:135:36: Parameter t9Signature should be final. [FinalParameters]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\Solution.java:135:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\XYZ\20186008_ADS-2\ASSIGNMENTS\M18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
