@@ -3,7 +3,7 @@ import java.util.TreeSet;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -22,7 +22,8 @@ public class Solution {
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash;
+            hash = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -109,12 +110,14 @@ public class Solution {
      *
      * @return     {Symbol Table}
      */
-    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+    public static BinarySearchST<String, Integer> loadDictionary(
+        final String file) {
+        BinarySearchST<String, Integer> st;
+        st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] tokens = toReadFile(file);
         int length = tokens.length;
-        for(int i = 0; i < length; i++) {
+        for (int i = 0; i < length; i++) {
             String str = tokens[i].toLowerCase();
             if (!st.contains(str)) {
                 st.put(str, 1);
@@ -140,7 +143,7 @@ class T9 {
      *
      * @param      st    {Symbol Table Object}
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         this.tst = new TST<Integer>();
         for (String word: st.keys()) {
@@ -175,21 +178,29 @@ class T9 {
             String[] tokens1 = word.split("");
             String format = "";
             for (String str : tokens1) {
-                if (str.equals("a") || str.equals("b") || str.equals("c")) {
+                if (str.equals("a")
+                    || str.equals("b") || str.equals("c")) {
                     format += "2";
-                } else if (str.equals("d") || str.equals("e") || str.equals("f")) {
+                } else if (str.equals("d")
+                    || str.equals("e") || str.equals("f")) {
                     format += "3";
-                } else if (str.equals("g") || str.equals("h") || str.equals("i")) {
+                } else if (str.equals("g")
+                    || str.equals("h") || str.equals("i")) {
                     format += "4";
-                } else if (str.equals("j") || str.equals("k") || str.equals("l")) {
+                } else if (str.equals("j")
+                    || str.equals("k") || str.equals("l")) {
                     format += "5";
-                } else if (str.equals("m") || str.equals("n") || str.equals("o")) {
+                } else if (str.equals("m")
+                    || str.equals("n") || str.equals("o")) {
                     format += "6";
-                } else if (str.equals("p") || str.equals("q") || str.equals("r") || str.equals("s")) {
+                } else if (str.equals("p") || str.equals("q")
+                    || str.equals("r") || str.equals("s")) {
                     format += "7";
-                } else if (str.equals("t") || str.equals("u") || str.equals("v")) {
+                } else if (str.equals("t")
+                    || str.equals("u") || str.equals("v")) {
                     format += "8";
-                } else if (str.equals("w") || str.equals("x") || str.equals("y") || str.equals("z")) {
+                } else if (str.equals("w") || str.equals("x")
+                    || str.equals("y") || str.equals("z")) {
                     format += "9";
                 }
             }
@@ -210,7 +221,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(
+        final Iterable<String> words, final int k) {
         // your code goes here
         MaxPQ<Integer> pq = new MaxPQ<Integer>();
         for (String word : words) {
@@ -237,7 +249,8 @@ class T9 {
      *
      * @return     {Iterable}
      */
-    public Iterable<String> t9(final String t9Signature, final int k) {
+    public Iterable<String> t9(
+        final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
